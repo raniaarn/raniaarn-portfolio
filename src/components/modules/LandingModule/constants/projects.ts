@@ -46,7 +46,7 @@ export const PROJECTS: ProjectCardProps[] = [
   },
   {
     title: 'Guidu: Mobile App Research and Design',
-    imageUrl: '/images/guidu.png',
+    imageUrl: '/images/Guidu.png',
     skillsUrls: [
       '/images/figma.svg',
     ],

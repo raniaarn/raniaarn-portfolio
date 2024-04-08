@@ -48,7 +48,7 @@ export const Guidu = () => {
     <LayoutComponent metaTitle="Guidu" metaDescription="Welcome to Raniaarn's Page">
       <ProjectSkeleton
         summary={summaryContent}
-        imageUrl="/images/guidu.png"
+        imageUrl="/images/Guidu.png"
         title="Guidu: Mobile App Research and Design"
         date="January 2022"
       >
