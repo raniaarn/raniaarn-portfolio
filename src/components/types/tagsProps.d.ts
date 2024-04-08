@@ -1,0 +1,3 @@
+interface TagsProps {
+  title: string;
+};
