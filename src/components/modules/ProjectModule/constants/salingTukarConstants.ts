@@ -101,8 +101,8 @@ export const PROTOTYPE = {
   prototypeSubtitle: 'High Fidelity Prototype',
   prototypeDesc: 'Based on every steps before, I finally created the UI Design for SalingTukar, here I show you some of the designs i\'ve created. For the link to the prototype, you can click the button at summary',
   prototypeImgUrl: [
-    '/images/salingtukar/prototype-1.png',
-    '/images/salingtukar/prototype.png',
+    '/images/salingtukar/Prototype-1.png',
+    '/images/salingtukar/Prototype.png',
   ],
 }
 
