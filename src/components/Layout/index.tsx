@@ -10,9 +10,11 @@ export const Layout: React.FC<LayoutProps> = ({ children, metaTitle, metaDescrip
         <title>{`${metaTitle}`}</title>
         <meta
           name="description"
-          content={metaDescription || "Raniaarn"}
+          content={metaDescription || "Raniaarn's Portfolio"}
         />
-        <meta property="og:image" content="https://i.ibb.co/8DjvMk1/preview.png" />
+        <meta property="og:title" content={`${metaTitle}`} />
+        <meta property="og:image" content="https://i.ibb.co/kBYXM63/raniaarn.png" />
+        <meta property="og:description" content={`${metaDescription || "Raniaarn's Portfolio"}`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/raniaarn.svg" />
       </Head>
