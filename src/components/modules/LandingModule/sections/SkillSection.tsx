@@ -1,5 +1,5 @@
 import { SkillCard, Tools } from "@/components/elements";
-import { FaLaptop, FaPalette } from "react-icons/fa6";
+import { FaCode, FaLaptop, FaPalette } from "react-icons/fa6";
 
 export const SkillSection = () => {
   return (
@@ -17,7 +17,7 @@ export const SkillSection = () => {
           title="UI/UX Design"
           description="Creating Web Design with style guide and fondation." />
         <SkillCard
-          icon={<FaPalette className="text-purple-500 text-3xl" />}
+          icon={<FaCode className="text-purple-500 text-3xl" />}
           title="Programming"
           description="Creating software solutions through coding for applications." />
       </div>
