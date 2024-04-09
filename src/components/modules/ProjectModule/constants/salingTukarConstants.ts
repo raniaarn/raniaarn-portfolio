@@ -56,7 +56,7 @@ export const EMPATHIZE = {
   personaImageUrl: '/images/salingtukar/persona.png',
   journey: 'User Journey Map',
   journeyDesc: 'Using the personas as a guide, I crafted two user journey maps to explore the experiences of both owners and renters. These maps provided insights into their behaviors, pain points, and potential opportunities, which are related to creating the platform to connect both personas and more detailed informations about the rent.',
-  journeyImageUrls: ['/images/salingtukar/userjourney.png', '/images/salingtukar/userjourney.png']
+  journeyImageUrls: ['/images/salingtukar/userjourney.png', '/images/salingtukar/userjourney2.png']
 }
 
 export const DEFINE = {

@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, metaTitle, metaDescrip
           name="description"
           content={metaDescription || "Raniaarn"}
         />
-        <meta name="image" content="/icons/raniaarn.svg" />
+        <meta name="og:image" content="/icons/preview.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/raniaarn.svg" />
       </Head>
