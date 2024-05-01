@@ -1,6 +1,11 @@
 export const SUMMARY = {
   title: "What is SalingTukar?",
   summary: "Students often lean towards renting or borrowing items that are seldom used due to time constraints, accessibility hurdles, and economic considerations. Introducing SalingTukar, an innovative application tailored for students, aimed at expediting the process of renting or lending items for specific situations or occasional use. This project was one of the task from Binar Academy UI/UX Research and Design bootcamp (MSIB Program).",
+  purpose: [
+    'Provide college students with an affordable way to access a variety of items they need.',
+    'Offer a broad selection of items for college students to rent.',
+    'Enable college students to earn income by renting out their own items.'
+  ],
   deliverables: [
     "Decks", "User Persona", "Journey Map", "Sitemap (IA)", "Flows", "Design System", "Prototype"
   ],
@@ -20,7 +25,13 @@ export const ROLE = {
 
 export const CONSTRAINTS = {
   title: 'Constraints',
-  description: 'Working on this project solo within a limited timeframe posed significant challenges.'
+  description: 'Working on this project solo within a limited timeframe (the first iteration prototype only took a week to design) posed significant challenges.'
+}
+
+export const DT = {
+  title: 'Desgin Process',
+  imageUrl: '/images/salingtukar/dt.png',
+  description: 'I employed the design thinking approach to gain a deep understanding of user needs and to develop creative solutions to address their challenges.'
 }
 
 export const PLAN = {
@@ -40,13 +51,40 @@ export const PLAN = {
   ],
   methodology: 'Methodology',
   methodDesc: 'For the methodology and data gathering, I conducted remote In-depth Interview with 5 participants (college students)',
-  methodImageURL: '/images/salingtukar/interview.png'
+  methodImageURL: '/images/salingtukar/interview.png',
+  findings: 'Findings',
+  findingsList: [
+    {
+      title: '#1 College Students need more economical options.',
+      list: [
+        'Behaviour: College Students prefer to borrow or rent items instead of buying them if they aren\'t used frequently.',
+        'Issue: High-quality items often come with high prices.',
+        'opportunity: Providing students the opportunity to rent various items at affordable prices according to their economic needs and preferences.'
+      ],
+    },
+    {
+      title: '#2 College Students need easy access.',
+      list: [
+        'Behaviour: College Students need to actively communicate with their surroundings to find out item availability.',
+        'Issue: Hard to find places to borrow from without good connections or enough information.',
+        'Opportunity: Provide a platform that makes it easier for students to find and borrow items, and gives lenders a chance to offer a variety of goods.'
+      ],
+    },
+    {
+      title: '#3 Students need additional sources of income.',
+      list: [
+        'Behaviour: The main motivation for students to rent out rarely used personal items is to earn extra income.',
+        'Issue: Difficulty in finding borrowers and concerns about the quality and security of the rented items.',
+        'Opportunity: Part-time job opportunities for students with guaranteed quality and security, both in terms of items and user interactions.'
+      ],
+    }
+  ]
 }
 
 export const EMPATHIZE = {
   title: 'Empathize',
   affinity: 'Affinity Mapping',
-  affinityDesc: 'After conducting interviews with IDI participants, I compiled all responses in FigJam, identified commonalities, and map them into groups to derive insights. The insights that i got was summarized on the PDF at the research plan section.',
+  affinityDesc: 'After conducting interviews with IDI participants, I compiled all responses in FigJam, identified commonalities, and map them into groups to derive insights. The insights that i got was summarized on the PDF at the research plan section or findings at reaseach section.',
   affinityDocs: '/images/salingtukar/affinity.png',
   fourwhy: 'Four Whys',
   fourwhyDesc: 'I asked 4 question to find root cause of the background problem. These questions, namely \'who,\' \'what,\' \'where,\' and \'why,\' were designed to extract the user\'s intent statement. By understanding the user\'s intent, we could then proceed to identify appropriate solutions that address their needs effectively. The intent statements led to target users need a platform to connect them.',
@@ -56,7 +94,7 @@ export const EMPATHIZE = {
   personaImageUrl: '/images/salingtukar/persona.png',
   journey: 'User Journey Map',
   journeyDesc: 'Using the personas as a guide, I crafted two user journey maps to explore the experiences of both owners and renters. These maps provided insights into their behaviors, pain points, and potential opportunities, which are related to creating the platform to connect both personas and more detailed informations about the rent.',
-  journeyImageUrls: ['/images/salingtukar/userjourney.png', '/images/salingtukar/userjourney2.png']
+  journeyImageUrl: '/images/salingtukar/userjourney.png'
 }
 
 export const DEFINE = {
@@ -75,34 +113,51 @@ export const IDEATION = {
   title: 'Ideation',
   crazy: 'Crazy 8',
   crazy8Desc: 'From the features previously defined, I embarked on creating Crazy 8 sketches. This exercise allowed me to generate rapid and creative ideas and solutions for each feature within a constrained timeframe.',
-  crazyImgUrl: '/images/salingtukar/crazy8.png',
+  crazyImgUrls: [
+    '/images/salingtukar/crazy8.png',
+    '/images/salingtukar/crazy8_2.png',
+  ],
   ia: 'Information Architecture',
   iaImgUrl: '/images/salingtukar/ia.png',
   iaDesc: 'From the crazy 8 i\'v created, I created the information architecture for the whole app. This helps me to create flows that might exist in SalingTukar',
   flow: 'Userflow and Wireflow',
   flowImgUrls: [
-    '/images/salingtukar/userflow.png',
+    '/images/salingtukar/flow1.png',
+    '/images/salingtukar/flow3.png',
+    '/images/salingtukar/flow4.png',
+    '/images/salingtukar/flow5.png',
     '/images/salingtukar/wireflow.png',
     '/images/salingtukar/wireflowB.png',
     '/images/salingtukar/wireflowC.png'
   ],
-  flowDesc: 'In the example below, I only shown the flows for checking out rent, for full documentation of other flows, you can check the documentation link at Summary section.'
+  flowDesc: 'In the example below, here I shown few flows of tasks that users can do at SalingTukar, for full documentation of other flows, you can check the documentation link at Summary section. After creating the flow, I also created the wireframe to give visions on what the UI layout will look like. The wireflow provided here only for the "rent an item" flow.'
 }
 
 export const PROTOTYPE = {
   title: 'Prototype',
   moodboard: 'Moodboard',
   moodboardImgUrl: '/images/salingtukar/moodboard.png',
+  moodboardDesc: 'Before creating the design system, i\'ve created SalingTukar\'s moodboard. First of all, I chose keywords that SalingTukar will bring; fun, friendly, trendy. After that I picked images online that describe the three words and search UI examples at dribble for references and inspirations. The typography here also described those three keywords in my opinion.',
   designSystem: 'Design System',
-  designSystemImgUrl: [
-    '/images/salingtukar/styleGuide.png',
-    '/images/salingtukar/component.png'
+  designSystemList: [
+    {
+      desc: 'Based on the moodboard before, i finally created first the style guide which included color palette, illustrations styles, Typography, grid styles, shadows, and Icons. For the color palette, each color has different states for consistency, like hover, pressed, border, etc. I also defined semantic colors like danger, warning, success, and information.',
+      imageUrl: '/images/salingtukar/styleGuide.png',
+    }, {
+      desc: 'I also created components needed in SalingTukar. The component styled according to the style guide, I also save it as components with variants in Figma.',
+      imageUrl: '/images/salingtukar/component.png'
+    }
   ],
   prototypeSubtitle: 'High Fidelity Prototype',
-  prototypeDesc: 'Based on every steps before, I finally created the UI Design for SalingTukar, here I show you some of the designs i\'ve created. For the link to the prototype, you can click the button at summary',
+  prototypeDesc: 'Based on every steps before, I finally created the UI Design for SalingTukar, here I show you some of the designs i\'ve created. For the link to the prototype, you can click the button below. This protoytpe is the result of the first iteration of SalingTukar design process.',
+  prototypeUrl: 'https://bit.ly/Prototype-ST-1',
   prototypeImgUrl: [
-    '/images/salingtukar/Prototype-1.png',
-    '/images/salingtukar/Prototype.png',
+    '/images/salingtukar/onboarding.png',
+    '/images/salingtukar/Search.png',
+    '/images/salingtukar/Apply.png',
+    '/images/salingtukar/Payment.png',
+    '/images/salingtukar/Review.png',
+    '/images/salingtukar/Issue.png',
   ],
 }
 

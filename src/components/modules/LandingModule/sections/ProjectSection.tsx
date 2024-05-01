@@ -1,5 +1,4 @@
 import { ProjectCard, SkillCard, Tools } from "@/components/elements";
-import { FaLaptop, FaPalette } from "react-icons/fa6";
 import { PROJECTS } from "../constants/projects";
 
 export const ProjectSection = () => {

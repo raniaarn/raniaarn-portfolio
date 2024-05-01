@@ -9,7 +9,8 @@ import {
   DEFINE,
   IDEATION,
   PROTOTYPE,
-  TESTING
+  TESTING,
+  DT
 } from '../constants/salingTukarConstants'
 import Link from "next/link";
 
@@ -27,13 +28,23 @@ export const SalingTukar = () => {
         <div className="text-sm">
           {SUMMARY.summary}
         </div>
+        <div className="text-sm">
+          The Purpose of this App:
+        </div>
+        <ul className="list-disc pl-8 text-justify">
+          {SUMMARY.purpose.map((roleItem, index) => (
+            <li className="text-sm" key={index}>
+              {roleItem}
+            </li>
+          ))}
+        </ul>
         <div className="font-semibold text-black text-lg">
           Navigations to Deliverables
         </div>
         <div className="text-sm grid items-center grid-cols-4 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
-            <div className="span-col-1">
-              <Tags key={index} title={item} />
+            <div key={index} className="span-col-1">
+              <Tags title={item} />
             </div>
           ))}
         </div>
@@ -74,6 +85,17 @@ export const SalingTukar = () => {
                 ))}
               </ul>
             </div>
+          </div>
+
+          {/** DESIGN THINKING */}
+          <div className="flex flex-col gap-4 text-justify">
+            <div className="font-bold text-purple-500 text-xl">
+              {DT.title}
+            </div>
+            <div className="text-sm text-black">
+              {DT.description}
+            </div>
+            <ImageEverywhere imageUrl={DT.imageUrl} />
           </div>
 
           {/** CONSTRAINTS */}
@@ -138,14 +160,36 @@ export const SalingTukar = () => {
             </div>
           </div>
 
+          {/** Research PLAN: Findings */}
+          <div className="flex flex-col gap-2">
+            <div className="font-semibold text-black">
+              {PLAN.findings}
+            </div>
+            {PLAN.findingsList.map((item: any) => (
+              <>
+                <div className="text-purple-500">
+                  {item.title}
+                </div>
+                <ul className="text-sm list-disc pl-8 text-justify">
+                  {item.list.map((point: any) => (
+                    <li>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ))}
+          </div>
+
+
           {/** EMPATHIZE */}
-          <div className="flex flex-col gap-4">
+          < div className="flex flex-col gap-4" >
             <div className="font-bold text-purple-500 text-xl">
               {EMPATHIZE.title}
             </div>
 
             {/** EMPATHIZE: affinity mapping */}
-            <div className="flex flex-col gap-2">
+            < div className="flex flex-col gap-2" >
               <div className="font-semibold text-black">
                 {EMPATHIZE.affinity}
               </div>
@@ -180,16 +224,14 @@ export const SalingTukar = () => {
             </div>
 
             {/** EMPATHIZE: User Journey Map */}
-            <div id="User Journey Map" className="flex flex-col gap-2">
+            <div id="Journey Map" className="flex flex-col gap-2">
               <div className="font-semibold text-black">
                 {EMPATHIZE.journey}
               </div>
               <div className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.journeyDesc}
               </div>
-              {EMPATHIZE.journeyImageUrls.map((item: any, index: number) => (
-                <ImageEverywhere key={index} imageUrl={item} />
-              ))}
+              <ImageEverywhere imageUrl={EMPATHIZE.journeyImageUrl} />
             </div>
           </div>
 
@@ -235,7 +277,9 @@ export const SalingTukar = () => {
               <div className="text-sm text-black mb-2 text-justify">
                 {IDEATION.crazy8Desc}
               </div>
-              <ImageEverywhere imageUrl={IDEATION.crazyImgUrl} />
+              {IDEATION.crazyImgUrls.map((item: any, index: number) => (
+                <ImageEverywhere key={index} imageUrl={item} />
+              ))}
             </div>
 
             {/** IDEATION: IA */}
@@ -274,6 +318,9 @@ export const SalingTukar = () => {
               <div className="font-semibold text-black">
                 {PROTOTYPE.moodboard}
               </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {PROTOTYPE.moodboardDesc}
+              </div>
               <ImageEverywhere imageUrl={PROTOTYPE.moodboardImgUrl} />
             </div>
 
@@ -282,8 +329,13 @@ export const SalingTukar = () => {
               <div className="font-semibold text-black">
                 {PROTOTYPE.designSystem}
               </div>
-              {PROTOTYPE.designSystemImgUrl.map((item: any, index: number) => (
-                <ImageEverywhere key={index} imageUrl={item} />
+              {PROTOTYPE.designSystemList.map((item: any, index: number) => (
+                <div key={index}>
+                  <div className="text-sm text-black mb-2 text-justify">
+                    {item.desc}
+                  </div>
+                  <ImageEverywhere imageUrl={item.imageUrl} />
+                </div>
               ))}
             </div>
 
@@ -295,6 +347,9 @@ export const SalingTukar = () => {
               <div className="text-sm text-black mb-2 text-justify">
                 {PROTOTYPE.prototypeDesc}
               </div>
+              <Link href={PROTOTYPE.prototypeUrl} target="blank">
+                <Button style="primary" content="First Prototype" extendClassName="w-full" />
+              </Link>
               {PROTOTYPE.prototypeImgUrl.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}

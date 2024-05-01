@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Navbar, Footer } from '@/components/elements'
+import { Navbar, Footer, ScrollToTopButton } from '@/components/elements'
 import React from 'react';
 import { LayoutProps } from "../types/layoutProps";
 
@@ -23,6 +23,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, metaTitle, metaDescrip
       </Head>
       <Navbar />
       {children}
+      <ScrollToTopButton />
       <Footer />
     </>
   )

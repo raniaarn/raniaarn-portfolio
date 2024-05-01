@@ -7,6 +7,7 @@ export default function Document() {
       <link
         rel="icon"
         href="/icons/raniaarn.svg"
+        type="image/svg+xml"
       />
       <body>
         <Main />
