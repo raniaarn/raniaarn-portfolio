@@ -29,7 +29,7 @@ export const CONSTRAINTS = {
 }
 
 export const DT = {
-  title: 'Desgin Process',
+  title: 'Design Process',
   imageUrl: '/images/salingtukar/dt.png',
   description: 'I employed the design thinking approach to gain a deep understanding of user needs and to develop creative solutions to address their challenges.'
 }
