@@ -458,7 +458,7 @@ export const SalingTukar = () => {
                   {TESTING.conclude}
                 </div>
 
-                <iframe id="Prototype" height="385" src="https://www.youtube.com/embed/aaoYk0BVOcs?si=fDXxVFXwkpQJHLtn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/aaoYk0BVOcs?si=fDXxVFXwkpQJHLtn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
 
               </div>
             </div>
