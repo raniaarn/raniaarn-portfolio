@@ -16,6 +16,7 @@ import {
   END
 } from '../constants/salingTukarConstants'
 import Link from "next/link";
+import Image from "next/image"
 
 const LayoutComponent = dynamic(
   () => import('@/components/Layout').then(mod => mod.Layout)
@@ -343,7 +344,7 @@ export const SalingTukar = () => {
             </div>
 
             {/** PROTOTYPE: High Fidelity */}
-            <div id="Prototype" className="flex flex-col gap-2">
+            <div id="UI" className="flex flex-col gap-2">
               <div className="font-semibold text-black">
                 {PROTOTYPE.prototypeSubtitle}
               </div>
@@ -456,6 +457,9 @@ export const SalingTukar = () => {
                 <div className="text-sm text-black mb-2 text-justify">
                   {TESTING.conclude}
                 </div>
+
+                <iframe id="Prototype" height="385" src="https://www.youtube.com/embed/aaoYk0BVOcs?si=fDXxVFXwkpQJHLtn" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+
               </div>
             </div>
 
@@ -493,6 +497,14 @@ export const SalingTukar = () => {
                 </div>
               ))}
             </div>
+            <Image
+              className="mx-auto items-center"
+              src='/images/salingtukar/closing.png'
+              alt="Bye!"
+              width={100}
+              height={100}
+               >
+            </Image>
           </div>
 
         </div>

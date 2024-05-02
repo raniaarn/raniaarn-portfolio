@@ -1,5 +1,3 @@
-import { title } from "process"
-
 export const SUMMARY = {
   title: "What is SalingTukar?",
   summary: "Students often lean towards renting or borrowing items that are seldom used due to time constraints, accessibility hurdles, and economic considerations. Introducing SalingTukar, an innovative application tailored for students, aimed at expediting the process of renting or lending items for specific situations or occasional use. This project was one of the task from Binar Academy UI/UX Research and Design bootcamp (MSIB Program).",
@@ -9,10 +7,10 @@ export const SUMMARY = {
     'Enable college students to earn income by renting out their own items.'
   ],
   deliverables: [
-    "Decks", "User Persona", "Journey Map", "Sitemap (IA)", "Flows", "Design System", "Prototype", "Redesign"
+    "User Persona", "Journey Map", "Sitemap (IA)", "Flows", "Design System", "UI", "Redesign", "Prototype"
   ],
   Documentation: 'https://www.figma.com/file/iaSRY8eG6EllWsO5T9BKBO/Research---SalingTukar?type=whiteboard&node-id=0%3A1&t=pD6p6NNYtBOh08fr-1',
-  Prototype: 'https://bit.ly/Prototype-ST-1'
+  Prototype: 'https://www.figma.com/proto/Nj4SADnHohHJEh0SeSiYDy/Design?page-id=796%3A60&type=design&node-id=817-18367&viewport=1099%2C-75%2C0.16&t=eCZKJzCEKOUfXpbn-1&scaling=scale-down&starting-point-node-id=817%3A18348&show-proto-sidebar=1&mode=design'
 }
 
 export const ROLE = {
