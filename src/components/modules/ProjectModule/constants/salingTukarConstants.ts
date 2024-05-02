@@ -1,3 +1,5 @@
+import { title } from "process"
+
 export const SUMMARY = {
   title: "What is SalingTukar?",
   summary: "Students often lean towards renting or borrowing items that are seldom used due to time constraints, accessibility hurdles, and economic considerations. Introducing SalingTukar, an innovative application tailored for students, aimed at expediting the process of renting or lending items for specific situations or occasional use. This project was one of the task from Binar Academy UI/UX Research and Design bootcamp (MSIB Program).",
@@ -163,5 +165,28 @@ export const PROTOTYPE = {
 
 export const TESTING = {
   title: 'Testing',
-  description: 'for this part, it hasn\'t been done yet. But I was planning to use Maze to gain insights for this step'
+  preparation: 'Testing Preparation',
+  preparationDesc: 'For the usability testing of the prototype, I employed Maze as the testing tool. The test plan is outlined below:',
+  preparationList: [
+    {
+      title: 'Target Participant:',
+      child: 'College students aged 19-25 year old'
+    },
+    {
+      title: 'Participant Count:',
+      child: 'min. 7 Participants (got 24 Participants)'
+    },
+    {
+      title: '3 tasks to finish:',
+      child: 'Rent an Item, Report Issue of a Rent, Review a Rent'
+    }
+  ],
+  result: 'Testing Result',
+  resultDesc: 'Below is the summary result that were gained from Maze. For full report you can click the button after the summary.',
+  resultImgUrl: '/images/salingtukar/TaskCompletion.png',
+  mazeUrl: 'https://ristek.link/SalingTukarTestReportV1',
+  issue: 'Issue Report and Room for Improvements',
+  issueDesc: 'Here are the issues and insights that were gathered from usability testing.',
+  redesign: 'Redesign',
+  
 }

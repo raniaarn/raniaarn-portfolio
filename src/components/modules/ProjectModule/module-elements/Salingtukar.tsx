@@ -64,7 +64,7 @@ export const SalingTukar = () => {
   )
 
   return (
-    <LayoutComponent metaTitle="SalingTukar" metaDescription="Welcome to Raniaarn's Page">
+    <LayoutComponent metaTitle="SalingTukar" metaDescription="Mobile App Research and Design">
       <ProjectSkeleton
         summary={summaryContent}
         imageUrl="/images/salingtukar.png"
@@ -362,11 +362,44 @@ export const SalingTukar = () => {
               {TESTING.title}
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div id="Test Plan" className="flex flex-col gap-2">
+              <div className="font-semibold text-black">
+                {TESTING.preparation}
+              </div>
               <div className="text-sm text-black mb-2 text-justify">
-                {TESTING.description}
+                {TESTING.preparationDesc}
+              </div>
+              <ul className="text-sm list-disc pl-8 text-justify">
+                  {TESTING.preparationList.map((point: any, index:number) => (
+                    <li key={index}>
+                      <span className="font-bold">{point.title}</span> {point.child}
+                    </li>
+                  ))}
+                </ul>
+            </div>
+
+            <div id="Testing Result" className="flex flex-col gap-2 mb-4">
+              <div className="font-semibold text-black">
+                {TESTING.result}
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {TESTING.resultDesc}
+              </div>
+              <ImageEverywhere imageUrl={TESTING.resultImgUrl} />
+              <Link href={TESTING.mazeUrl} target="blank">
+                <Button style="primary" content="Maze Report" extendClassName="w-full" />
+              </Link>
+            </div>
+
+            <div id="Issue Report" className="flex flex-col gap-2">
+              <div className="font-semibold text-black">
+                {TESTING.issue}
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {TESTING.issueDesc}
               </div>
             </div>
+
           </div>
         </div>
       </ProjectSkeleton>

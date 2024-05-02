@@ -21,6 +21,8 @@ export default function Document() {
         sizes="16x16"
         href="/icons/favicon-16x16.png"
       />
+      <link rel="manifest" href="/site.webmanifest" />
+      <meta name="google-site-verification" content="google-site-verification=2tHTYWSNOYbZ-XLS5PAarS7PdJuWHDXZsqNJ_jo8iYE" />
       <body>
         <Main />
         <NextScript />
