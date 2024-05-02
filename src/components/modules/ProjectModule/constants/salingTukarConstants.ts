@@ -9,7 +9,7 @@ export const SUMMARY = {
     'Enable college students to earn income by renting out their own items.'
   ],
   deliverables: [
-    "Decks", "User Persona", "Journey Map", "Sitemap (IA)", "Flows", "Design System", "Prototype"
+    "Decks", "User Persona", "Journey Map", "Sitemap (IA)", "Flows", "Design System", "Prototype", "Redesign"
   ],
   Documentation: 'https://www.figma.com/file/iaSRY8eG6EllWsO5T9BKBO/Research---SalingTukar?type=whiteboard&node-id=0%3A1&t=pD6p6NNYtBOh08fr-1',
   Prototype: 'https://bit.ly/Prototype-ST-1'
@@ -187,6 +187,71 @@ export const TESTING = {
   mazeUrl: 'https://ristek.link/SalingTukarTestReportV1',
   issue: 'Issue Report and Room for Improvements',
   issueDesc: 'Here are the issues and insights that were gathered from usability testing.',
-  redesign: 'Redesign',
-  
+  issuesRent: 'Task 1: Rent an Item',
+  issuesRentList: [
+    {
+      imageUrl: '/images/salingtukar/PackagesCardIssue.png',
+      desc: 'Room for improvement: Change the component from card to another components like horizontal scroll tags',
+    },
+    {
+      imageUrl: '/images/salingtukar/PaymentMethodIssue.png',
+      desc: 'Room for improvement: The payment method is also selected when applying for a rental. When ready to pay, users can edit the payment method again.',
+    },
+    {
+      imageUrl: '/images/salingtukar/VoucherIssue.png',
+      desc: 'Room for improvement: Delete the back button and add "reset voucher" button, or upon clicking the back button, create a modal which try to confirm user to discard changes',
+    }
+  ],
+  issuesTracker: 'Task 2: Report an Issue',
+  issuesTrackerList: [
+    {
+      imageUrl: '/images/salingtukar/CardIssue.png',
+      desc: 'Room for improvement: Adding "Report Issue" and "See Detail" on the transaction cards at Home and Rents page',
+    },
+    {
+      imageUrl: '/images/salingtukar/IssueTrackingIssue.png',
+      desc: 'Room for improvement: Giving more clear and visible instructions at the top of the page. This could also reduce redudancy for instructions that previously on every prompt. Additionally, when new chat received, a scroll down floating button shows, guiding users to scroll down.'
+    },
+  ],
+  issuesRating:
+  {
+    title: 'Task 3: Review a Rent',
+    imageUrl: '/images/salingtukar/RatingIssue.png',
+    desc: 'Room for improvement: Adding a title to the emoticon review and placing it lower down, removing the overall rating field because we can just deriving the overall rating from other fields (quality and owner), changing the scale to stars.'
+  },
+  redesign: 'Redesign Result',
+  redesignDesc: 'Based on the issues and room for improvement before, below is the redesign results which also based on user\'s feedback from usability testing',
+  redesignImgUrls: [
+    '/images/salingtukar/BeforeAfter1.png',
+    '/images/salingtukar/BeforeAfter2.png',
+    '/images/salingtukar/BeforeAfter3.png',
+    '/images/salingtukar/BeforeAfter4.png',
+    '/images/salingtukar/BeforeAfter5.png',
+    '/images/salingtukar/BeforeAfter6.png',
+  ],
+  newAdditionDesc: 'Aside from the redesign, I also added 2 features for SalingTukar, they are Profile Page and Chat, which you can see below.',
+  newAdditionImgUrls: [
+    '/images/salingtukar/Chat.png',
+    '/images/salingtukar/Profile.png',
+  ],
+  conclude: 'The updated prototype is on the summary section, you can also see this video below on Youtube for the demo of SalingTukar.',
+
+}
+
+export const CONCLUSION = {
+  title: 'Conclusion',
+  desc: 'SalingTukar received numerous positive feedbacks from the target users. During usability testing, the platform also gathered many insights to enhance UI/UX and usability. Initial research showed that having SalingTukar as a solution to the previously mentioned problems also elicited positive responses from the participants.'
+}
+
+export const RECOMMENDATION = {
+  title: 'Recommendation',
+  desc: 'I\'ve noticed that there are still several shortcomings in designing this prototype. Any suggestions would be very helpful for creating a better version.'
+}
+
+export const END = {
+  title: 'Final Words...',
+  desc: [
+    'Thank you so much for delving into this case study of SalingTukar! I gained numerous valuable lessons from designing SalingTukar. I also want to express my gratitude to everyone who involved me in this project, all the participants in the research and usability testing, my friends who provided suggestions and insights, and the designers who inspired and served as references for the SalingTukar design, including apps like Tokopedia, Shopee, Dribble, Gopay, and Carousell.',
+    'Raniaarn signing off now! contact me below if you have suggestions or questions about SalingTukar 🙋‍♀️'
+  ]
 }

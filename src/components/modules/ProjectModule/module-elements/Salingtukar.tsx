@@ -10,7 +10,10 @@ import {
   IDEATION,
   PROTOTYPE,
   TESTING,
-  DT
+  DT,
+  CONCLUSION,
+  RECOMMENDATION,
+  END
 } from '../constants/salingTukarConstants'
 import Link from "next/link";
 
@@ -370,12 +373,12 @@ export const SalingTukar = () => {
                 {TESTING.preparationDesc}
               </div>
               <ul className="text-sm list-disc pl-8 text-justify">
-                  {TESTING.preparationList.map((point: any, index:number) => (
-                    <li key={index}>
-                      <span className="font-bold">{point.title}</span> {point.child}
-                    </li>
-                  ))}
-                </ul>
+                {TESTING.preparationList.map((point: any, index: number) => (
+                  <li key={index}>
+                    <span className="font-bold">{point.title}</span> {point.child}
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div id="Testing Result" className="flex flex-col gap-2 mb-4">
@@ -391,16 +394,107 @@ export const SalingTukar = () => {
               </Link>
             </div>
 
-            <div id="Issue Report" className="flex flex-col gap-2">
+            <div id="Issue Report" className="flex flex-col gap-4">
               <div className="font-semibold text-black">
                 {TESTING.issue}
               </div>
               <div className="text-sm text-black mb-2 text-justify">
                 {TESTING.issueDesc}
               </div>
+
+              <div className="text-sm text-purple-500 font-semibold">
+                {TESTING.issuesRent}
+              </div>
+              {TESTING.issuesRentList.map((item: any, index: number) => (
+                <div key={index}>
+                  <ImageEverywhere imageUrl={item.imageUrl} />
+                  <div className="text-sm text-black mb-2 text-justify">
+                    {item.desc}
+                  </div>
+                  <div className="text-sm text-black mb-2 text-justify">
+                    {item.justify}
+                  </div>
+                </div>
+              ))}
+
+              <div className="text-sm text-purple-500 font-semibold">
+                {TESTING.issuesTracker}
+              </div>
+              {TESTING.issuesTrackerList.map((item: any, index: number) => (
+                <div key={index}>
+                  <ImageEverywhere imageUrl={item.imageUrl} />
+                  <div className="text-sm text-black mb-2 text-justify">
+                    {item.desc}
+                  </div>
+                </div>
+              ))}
+
+              <div className="text-sm text-purple-500 font-semibold">
+                {TESTING.issuesRating.title}
+              </div>
+              <ImageEverywhere imageUrl={TESTING.issuesRating.imageUrl} />
+              <div className="text-sm text-black mb-2 text-justify">
+                {TESTING.issuesRating.desc}
+              </div>
+
+              <div id="Redesign" className="flex flex-col gap-2 mb-4">
+                <div className="font-semibold text-black">
+                  {TESTING.redesign}
+                </div>
+                <div className="text-sm text-black mb-2 text-justify">
+                  {TESTING.redesignDesc}
+                </div>
+                {TESTING.redesignImgUrls.map((item: any, index: number) => (
+                  <ImageEverywhere key={index} imageUrl={item} />
+                ))}
+                <div className="text-sm text-black mb-2 text-justify">
+                  {TESTING.newAdditionDesc}
+                </div>
+                {TESTING.newAdditionImgUrls.map((item: any, index: number) => (
+                  <ImageEverywhere key={index} imageUrl={item} />
+                ))}
+                <div className="text-sm text-black mb-2 text-justify">
+                  {TESTING.conclude}
+                </div>
+              </div>
             </div>
 
           </div>
+
+          {/** CONCLUSION */}
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-purple-500 text-xl">
+              {CONCLUSION.title}
+            </div>
+            <div className="text-sm text-black mb-2 text-justify">
+              {CONCLUSION.desc}
+            </div>
+          </div>
+
+          {/** RECOMMENDATION */}
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-purple-500 text-xl">
+              {RECOMMENDATION.title}
+            </div>
+            <div className="text-sm text-black mb-2 text-justify">
+              {RECOMMENDATION.desc}
+            </div>
+          </div>
+
+          {/** END */}
+          <div className="flex flex-col gap-4">
+            <div className="font-bold text-purple-500 text-xl">
+              {END.title}
+            </div>
+            <div className="text-sm text-black mb-2 text-justify">
+              {END.desc.map((item: any, index: number) => (
+                <div key={index} className="text-sm text-black mb-2 text-justify">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
         </div>
       </ProjectSkeleton>
     </LayoutComponent >
