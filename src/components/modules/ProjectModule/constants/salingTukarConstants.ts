@@ -1,6 +1,6 @@
 export const SUMMARY = {
   title: "What is SalingTukar?",
-  summary: "Students often lean towards renting or borrowing items that are seldom used due to time constraints, accessibility hurdles, and economic considerations. Introducing SalingTukar, an innovative application tailored for students, aimed at expediting the process of renting or lending items for specific situations or occasional use. This project was one of the task from Binar Academy UI/UX Research and Design bootcamp (MSIB Program).",
+  summary: "College Students often lean towards renting or borrowing items that are not often used due to time constraints, accessibility hurdles, and economic considerations. Introducing SalingTukar, an innovative application tailored for students, aimed at expediting the process of renting or lending items for specific situations or occasional use. This project was one of the task from Binar Academy UI/UX Research and Design bootcamp (MSIB Program).",
   purpose: [
     'Provide college students with an affordable way to access a variety of items they need.',
     'Offer a broad selection of items for college students to rent.',
