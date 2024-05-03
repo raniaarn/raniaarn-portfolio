@@ -447,6 +447,10 @@ export const SalingTukar = () => {
               </div>
               <ImageEverywhere imageUrl={TESTING.issuesRating.redesign} />
 
+              <div className="text-sm text-black mb-2 text-justify">
+                {TESTING.newAdditionDesc}
+              </div>
+
               {TESTING.newAdditionImgUrls.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
