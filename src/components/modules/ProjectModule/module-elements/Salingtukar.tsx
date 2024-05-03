@@ -395,7 +395,7 @@ export const SalingTukar = () => {
               </Link>
             </div>
 
-            <div id="Issue Report" className="flex flex-col gap-4">
+            <div id="Redesign" className="flex flex-col gap-4">
               <div className="font-semibold text-black">
                 {TESTING.issue}
               </div>
