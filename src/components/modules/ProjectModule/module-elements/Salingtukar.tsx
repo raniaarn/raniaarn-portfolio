@@ -408,6 +408,9 @@ export const SalingTukar = () => {
               </div>
               {TESTING.issuesRentList.map((item: any, index: number) => (
                 <div key={index}>
+                  <div className="text-sm font-semibold text-black mb-2 text-justify">
+                    {item.subtitle}
+                  </div>
                   <ImageEverywhere imageUrl={item.imageUrl} />
                   <div className="text-sm text-black mb-2 text-justify">
                     {item.desc}
@@ -415,6 +418,7 @@ export const SalingTukar = () => {
                   <div className="text-sm text-black mb-2 text-justify">
                     {item.justify}
                   </div>
+                  <ImageEverywhere imageUrl={item.redesign} />
                 </div>
               ))}
 
@@ -423,10 +427,14 @@ export const SalingTukar = () => {
               </div>
               {TESTING.issuesTrackerList.map((item: any, index: number) => (
                 <div key={index}>
+                  <div className="text-sm font-semibold text-black mb-2 text-justify">
+                    {item.subtitle}
+                  </div>
                   <ImageEverywhere imageUrl={item.imageUrl} />
                   <div className="text-sm text-black mb-2 text-justify">
                     {item.desc}
                   </div>
+                  <ImageEverywhere imageUrl={item.redesign} />
                 </div>
               ))}
 
@@ -437,8 +445,20 @@ export const SalingTukar = () => {
               <div className="text-sm text-black mb-2 text-justify">
                 {TESTING.issuesRating.desc}
               </div>
+              <ImageEverywhere imageUrl={TESTING.issuesRating.redesign} />
 
-              <div id="Redesign" className="flex flex-col gap-2 mb-4">
+              {TESTING.newAdditionImgUrls.map((item: any, index: number) => (
+                <ImageEverywhere key={index} imageUrl={item} />
+              ))}
+              <div className="text-sm text-black mb-2 text-justify">
+                {TESTING.conclude}
+              </div>
+              <iframe height={385} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNj4SADnHohHJEh0SeSiYDy%2FDesign%3Fpage-id%3D796%253A60%26type%3Ddesign%26node-id%3D817-18367%26viewport%3D1555%252C-115%252C0.23%26t%3D6AMNlp8X3lGqxqIW-1%26scaling%3Dscale-down%26starting-point-node-id%3D817%253A18348%26mode%3Ddesign" allowFullScreen></iframe>
+
+              <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/612JMNAU1Jw?si=Ejn3y3hVVPe9CaLp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+
+
+              {/* <div id="Redesign" className="flex flex-col gap-2 mb-4">
                 <div className="font-semibold text-black">
                   {TESTING.redesign}
                 </div>
@@ -461,7 +481,7 @@ export const SalingTukar = () => {
 
                 <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/612JMNAU1Jw?si=Ejn3y3hVVPe9CaLp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
 
-              </div>
+              </div> */}
             </div>
 
           </div>
@@ -504,7 +524,7 @@ export const SalingTukar = () => {
               alt="Bye!"
               width={100}
               height={100}
-               >
+            >
             </Image>
           </div>
 

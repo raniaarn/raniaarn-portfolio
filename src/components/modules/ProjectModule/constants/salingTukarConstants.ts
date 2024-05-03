@@ -183,39 +183,52 @@ export const TESTING = {
   resultDesc: 'Below is the summary result that were gained from Maze. For full report you can click the button after the summary.',
   resultImgUrl: '/images/salingtukar/TaskCompletion.png',
   mazeUrl: 'https://ristek.link/SalingTukarTestReportV1',
-  issue: 'Issue Report and Room for Improvements',
-  issueDesc: 'Here are the issues and insights that were gathered from usability testing.',
+  issue: 'Issue and Redesign',
+  issueDesc: 'Here are the issues and insights that were gathered from usability testing. Then Based on the issues and room for improvement, I also put the redesign results which also based on user\'s feedback from usability testing',
   issuesRent: 'Task 1: Rent an Item',
   issuesRentList: [
     {
+      subtitle: 'Issue 1',
       imageUrl: '/images/salingtukar/PackagesCardIssue.png',
       desc: 'Room for improvement: Change the component from card to another components like horizontal scroll tags',
+      redesign: '/images/salingtukar/BeforeAfter1.png',
     },
     {
+      subtitle: 'Issue 2',
       imageUrl: '/images/salingtukar/PaymentMethodIssue.png',
       desc: 'Room for improvement: The payment method is also selected when applying for a rental. When ready to pay, users can edit the payment method again.',
+      redesign: '/images/salingtukar/BeforeAfter2.png',
     },
     {
+      subtitle: 'Issue 3',
       imageUrl: '/images/salingtukar/VoucherIssue.png',
       desc: 'Room for improvement: Delete the back button and add "reset voucher" button, or upon clicking the back button, create a modal which try to confirm user to discard changes',
+      redesign: '/images/salingtukar/BeforeAfter3.png',
+
     }
   ],
   issuesTracker: 'Task 2: Report an Issue',
   issuesTrackerList: [
     {
+      subtitle: 'Issue 1',
       imageUrl: '/images/salingtukar/CardIssue.png',
       desc: 'Room for improvement: Adding "Report Issue" and "See Detail" on the transaction cards at Home and Rents page',
+      redesign: '/images/salingtukar/BeforeAfter4.png',
+
     },
     {
+      subtitle: 'Issue 2',
       imageUrl: '/images/salingtukar/IssueTrackingIssue.png',
-      desc: 'Room for improvement: Giving more clear and visible instructions at the top of the page. This could also reduce redudancy for instructions that previously on every prompt. Additionally, when new chat received, a scroll down floating button shows, guiding users to scroll down.'
+      desc: 'Room for improvement: Giving more clear and visible instructions at the top of the page. This could also reduce redudancy for instructions that previously on every prompt. Additionally, when new chat received, a scroll down floating button shows, guiding users to scroll down.',
+      redesign: '/images/salingtukar/BeforeAfter5.png',
     },
   ],
   issuesRating:
   {
     title: 'Task 3: Review a Rent',
     imageUrl: '/images/salingtukar/RatingIssue.png',
-    desc: 'Room for improvement: Adding a title to the emoticon review and placing it lower down, removing the overall rating field because we can just deriving the overall rating from other fields (quality and owner), changing the scale to stars.'
+    desc: 'Room for improvement: Adding a title to the emoticon review and placing it lower down, removing the overall rating field because we can just deriving the overall rating from other fields (quality and owner), changing the scale to stars.',
+    redesign: '/images/salingtukar/BeforeAfter6.png',
   },
   redesign: 'Redesign Result',
   redesignDesc: 'Based on the issues and room for improvement before, below is the redesign results which also based on user\'s feedback from usability testing',
