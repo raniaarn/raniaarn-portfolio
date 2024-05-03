@@ -213,14 +213,14 @@ export const TESTING = {
       subtitle: 'Issue 1',
       imageUrl: '/images/salingtukar/CardIssue.png',
       desc: 'Room for improvement: Adding "Report Issue" and "See Detail" on the transaction cards at Home and Rents page',
-      redesign: '/images/salingtukar/BeforeAfter4.png',
+      redesign: '/images/salingtukar/BeforeAfter5.png',
 
     },
     {
       subtitle: 'Issue 2',
       imageUrl: '/images/salingtukar/IssueTrackingIssue.png',
       desc: 'Room for improvement: Giving more clear and visible instructions at the top of the page. This could also reduce redudancy for instructions that previously on every prompt. Additionally, when new chat received, a scroll down floating button shows, guiding users to scroll down.',
-      redesign: '/images/salingtukar/BeforeAfter5.png',
+      redesign: '/images/salingtukar/BeforeAfter4.png',
     },
   ],
   issuesRating:
