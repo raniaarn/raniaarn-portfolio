@@ -249,7 +249,7 @@ export const RECOMMENDATION = {
 export const END = {
   title: 'Final Words...',
   desc: [
-    'Thank you so much for delving into this case study of SalingTukar! I gained numerous valuable lessons from designing SalingTukar. I also want to express my gratitude to everyone who involved me in this project, Kak Rizqi Nino Firmansyah as my mentor who gave me numerous feedbacks, all the participants in the research and usability testing, my friends who provided suggestions and insights, and the designers who inspired and served as references for the SalingTukar design, including apps like Tokopedia, Shopee, Dribble, Gopay, and Carousell.',
+    'Thank you so much for delving into this case study of SalingTukar! I gained numerous valuable lessons from designing SalingTukar. I also want to express my gratitude to everyone who involved me in this project, Kak Rizqi Nino Firmansyah as my mentor who gave me numerous feedbacks, all the participants in the research and usability testing, my friends who provided suggestions and insights, and the designers who inspired and served as references for the SalingTukar design, including apps like Tokopedia, Shopee, Dribble, Gopay, and Carousell. A few templates like persona, journey map and a ccouple of case study structures inspired by FelicLim (medium: @feliclim24)',
     'Raniaarn signing off now! contact me below if you have suggestions or questions about SalingTukar 🙋‍♀️'
   ]
 }
