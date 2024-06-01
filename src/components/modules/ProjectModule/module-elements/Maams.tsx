@@ -8,7 +8,9 @@ import {
   PRASPRINT,
   SPRINTPLANNING,
   DAILYSCRUM,
-  REVIEW
+  REVIEW,
+  AWARDS,
+  DECK
 } from '../constants/maamsConstants';
 import Link from "next/link";
 
@@ -26,9 +28,22 @@ export const Maams = () => {
         <div className="text-sm">
           {SUMMARY.summary}
         </div>
+        <div className="font-semibold text-black text-lg">
+          Navigations
+        </div>
+        <div className="text-sm grid items-center grid-cols-3 gap-2">
+          {SUMMARY.deliverables.map((item, index) => (
+            <div className="span-col-1">
+              <Tags key={index} title={item} />
+            </div>
+          ))}
+        </div>
         <div className='flex-row flex gap-4 w-full justify-start'>
           <Link href={SUMMARY.prototype} target="blank">
             <Button content='Prototype' style='primary' />
+          </Link>
+          <Link href={SUMMARY.link} target="blank">
+            <Button content='Website' style='outline-light' />
           </Link>
         </div>
       </div>
@@ -45,8 +60,19 @@ export const Maams = () => {
       >
         <div className="flex flex-col gap-8">
 
+          { /** AWARD */}
+          <div id="Awards" className="flex flex-col gap-4">
+            <div className="font-bold text-purple-500 text-xl">
+              {AWARDS.title}
+            </div>
+            <div className="text-sm text-black mb-2 text-justify">
+              {AWARDS.description}
+            </div>
+            <ImageEverywhere imageUrl={AWARDS.imageUrl} />
+          </div>
+
           { /** ROLES */}
-          <div className="flex flex-col gap-4">
+          <div id="Roles" className="flex flex-col gap-4">
             <div className="font-bold text-purple-500 text-xl">
               {ROLE.title}
             </div>
@@ -64,8 +90,18 @@ export const Maams = () => {
             </div>
           </div>
 
+
+          { /** PITCHDECK */}
+          <div id="Deck" className="flex flex-col gap-4">
+            <div className="font-bold text-purple-500 text-xl">
+              {DECK.title}
+            </div>
+            <iframe className="w-4/5 md:w-5/6 h-[300px] mx-auto justify-items-center" src={DECK.slide} />
+            <iframe className="w-[100%] mx-auto h-[385px] md:h-[385px] sm:h-[160px]" src="https://www.youtube.com/embed/i9YhQCxn04w?si=8zNyo6TTObuOtk-F" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+          </div>
+
           { /** Documentation */}
-          <div className="flex flex-col gap-4">
+          <div id="Articles" className="flex flex-col gap-4">
             <div className="font-bold text-purple-500 text-xl">
               {DOCUMENTATION.title}
             </div>
@@ -120,7 +156,7 @@ export const Maams = () => {
 
 
           { /** Sprint Planning */}
-          <div className="flex flex-col gap-4">
+          <div id="PBIs" className="flex flex-col gap-4">
             <div className="font-bold text-purple-500 text-xl">
               {SPRINTPLANNING.title}
             </div>
@@ -130,6 +166,15 @@ export const Maams = () => {
                 {SPRINTPLANNING.description}
               </div>
               <ImageEverywhere imageUrl={SPRINTPLANNING.imageUrl} />
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <div className="text-sm text-black mb-2 text-justify">
+                {SPRINTPLANNING.description2}
+              </div>
+              {SPRINTPLANNING.imageUrls_2.map((item: any, index: number) => (
+                <ImageEverywhere key={index} imageUrl={item} />
+              ))}
             </div>
           </div>
 
@@ -143,6 +188,10 @@ export const Maams = () => {
             <div className="flex flex-col gap-2">
               <div className="text-sm text-black mb-2 text-justify">
                 {DAILYSCRUM.description}
+                {DAILYSCRUM.description2}
+                {DAILYSCRUM.imgUrls.map((item: any, index: number) => (
+                  <ImageEverywhere key={index} imageUrl={item} />
+                ))}
               </div>
             </div>
           </div>

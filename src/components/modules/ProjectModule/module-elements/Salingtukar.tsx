@@ -460,32 +460,6 @@ export const SalingTukar = () => {
               <iframe height={385} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNj4SADnHohHJEh0SeSiYDy%2FDesign%3Fpage-id%3D796%253A60%26type%3Ddesign%26node-id%3D817-18367%26viewport%3D1555%252C-115%252C0.23%26t%3D6AMNlp8X3lGqxqIW-1%26scaling%3Dscale-down%26starting-point-node-id%3D817%253A18348%26mode%3Ddesign" allowFullScreen></iframe>
 
               <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/612JMNAU1Jw?si=Ejn3y3hVVPe9CaLp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-
-
-              {/* <div id="Redesign" className="flex flex-col gap-2 mb-4">
-                <div className="font-semibold text-black">
-                  {TESTING.redesign}
-                </div>
-                <div className="text-sm text-black mb-2 text-justify">
-                  {TESTING.redesignDesc}
-                </div>
-                {TESTING.redesignImgUrls.map((item: any, index: number) => (
-                  <ImageEverywhere key={index} imageUrl={item} />
-                ))}
-                <div className="text-sm text-black mb-2 text-justify">
-                  {TESTING.newAdditionDesc}
-                </div>
-                {TESTING.newAdditionImgUrls.map((item: any, index: number) => (
-                  <ImageEverywhere key={index} imageUrl={item} />
-                ))}
-                <div className="text-sm text-black mb-2 text-justify">
-                  {TESTING.conclude}
-                </div>
-                <iframe height={385} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNj4SADnHohHJEh0SeSiYDy%2FDesign%3Fpage-id%3D796%253A60%26type%3Ddesign%26node-id%3D817-18367%26viewport%3D1555%252C-115%252C0.23%26t%3D6AMNlp8X3lGqxqIW-1%26scaling%3Dscale-down%26starting-point-node-id%3D817%253A18348%26mode%3Ddesign" allowFullScreen></iframe>
-
-                <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/612JMNAU1Jw?si=Ejn3y3hVVPe9CaLp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
-
-              </div> */}
             </div>
 
           </div>
