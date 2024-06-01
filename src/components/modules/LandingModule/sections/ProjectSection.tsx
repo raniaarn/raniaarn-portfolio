@@ -1,4 +1,4 @@
-import { ProjectCard, SkillCard, Tools } from "@/components/elements";
+import { ProjectCard } from "@/components/elements";
 import { PROJECTS } from "../constants/projects";
 
 export const ProjectSection = () => {

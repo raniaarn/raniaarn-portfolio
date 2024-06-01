@@ -7,15 +7,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg'
     ],
-    redirect:'/SalingTukar'
-  }, 
-  {
-    title: 'Bansource: Mobile and Desktop App Research and Design',
-    imageUrl: '/images/bansource.png',
-    skillsUrls: [
-      '/images/figma.svg'
-    ],
-    redirect:'/Bansource'
+    redirect: '/SalingTukar'
   },
   {
     title: 'MAAMS: Analysis Validator Website',
@@ -25,7 +17,15 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/django.svg',
       '/images/nextjs.svg'
     ],
-    redirect:'/Maams'
+    redirect: '/Maams'
+  },
+  {
+    title: 'Bansource: Mobile and Desktop App Research and Design',
+    imageUrl: '/images/bansource.png',
+    skillsUrls: [
+      '/images/figma.svg'
+    ],
+    redirect: '/Bansource'
   },
   {
     title: 'Memoar-id: Social Media Website',
@@ -34,7 +34,7 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/figma.svg',
       '/images/nextjs.svg'
     ],
-    redirect:'/Memoar'
+    redirect: '/Memoar'
   },
   {
     title: 'SkillBoozt: Mobile App Research and Design',
@@ -42,7 +42,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect:'/SkillBoozt'
+    redirect: '/SkillBoozt'
   },
   {
     title: 'Guidu: Mobile App Research and Design',
@@ -50,6 +50,6 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect:'/Guidu'
+    redirect: '/Guidu'
   },
 ]

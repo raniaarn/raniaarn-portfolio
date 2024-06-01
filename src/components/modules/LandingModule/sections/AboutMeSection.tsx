@@ -29,7 +29,7 @@ export const AboutMeSection = () => {
             <Link href="#contact">
               <Button content='Contact Me' style='primary' />
             </Link>
-            <Link href="https://drive.google.com/file/d/1a7Sp8ooB7pxx81CKR6qBASfoLiggvPnu/preview">
+            <Link href="https://docs.google.com/document/d/17k2KLO9s-rpLuWoOd6blPUE32Nf_ERBrk_zPkjxWEiY/preview" target='blank'>
               <Button content='View CV' style='outline'/>
             </Link>
           </div>
