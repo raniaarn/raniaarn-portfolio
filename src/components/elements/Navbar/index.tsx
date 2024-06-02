@@ -107,11 +107,11 @@ export const Navbar = () => {
 
         {isCollapsed ? (
           <button className="flex md:hidden" onClick={handleNavCollapse}>
-            <FaBars className={`${!isTransparent ? 'w-20 text-purple-500' : 'w-20 text-white'}`} />
+            <FaBars size={24} className={`${!isTransparent ? 'text-purple-500' : 'text-white'}`} />
           </button>
         ) : (
           <button className="flex md:hidden" onClick={handleNavCollapse}>
-            <FaTimes className={`${!isTransparent ? 'w-20 text-purple-500' : 'w-20 text-white'}`} />
+            <FaTimes size={24} className={`${!isTransparent ? 'text-purple-500' : 'text-white'}`} />
           </button>
         )}
 
