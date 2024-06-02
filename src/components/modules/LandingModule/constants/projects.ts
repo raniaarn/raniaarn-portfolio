@@ -7,7 +7,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg'
     ],
-    redirect: '/SalingTukar'
+    redirect: '/projects/SalingTukar'
   },
   {
     title: 'MAAMS: Analysis Validator Website',
@@ -17,7 +17,7 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/django.svg',
       '/images/nextjs.svg'
     ],
-    redirect: '/Maams'
+    redirect: '/projects/Maams'
   },
   {
     title: 'Bansource: Mobile and Desktop App Research and Design',
@@ -25,7 +25,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg'
     ],
-    redirect: '/Bansource'
+    redirect: '/projects/Bansource'
   },
   {
     title: 'Memoar-id: Social Media Website',
@@ -34,7 +34,16 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/figma.svg',
       '/images/nextjs.svg'
     ],
-    redirect: '/Memoar'
+    redirect: '/projects/Memoar'
+  },
+  {
+    title: 'Website Portfolio',
+    imageUrl: '/images/Portfolio.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/nextjs.svg'
+    ],
+    redirect: 'https://github.com/raniaarn/raniaarn-portfolio'
   },
   {
     title: 'SkillBoozt: Mobile App Research and Design',
@@ -42,7 +51,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect: '/SkillBoozt'
+    redirect: '/projects/SkillBoozt'
   },
   {
     title: 'Guidu: Mobile App Research and Design',
@@ -50,6 +59,6 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect: '/Guidu'
+    redirect: '/projects/Guidu'
   },
 ]

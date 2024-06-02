@@ -19,7 +19,7 @@ export const ProjectSection = () => {
           </div>
         ))}
       </div>
-      <div className="py-4 items-center mx-auto justify-items-center w-full h-[350px]">
+      <div id="Design" className="py-4 items-center mx-auto justify-items-center w-full h-[350px]">
         <div className="text-violet-500 text-center text-lg font-medium py-4">
           Design's Portfolio
         </div>

@@ -10,7 +10,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   redirect
 }) => {
   return (
-    <div id="projects" className="max-w-[450px] h-full flex flex-col p-10 rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4">
+    <div id="Applications" className="max-w-[450px] h-full flex flex-col p-10 rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4">
       <div className="h-full flex flex-col gap-4">
         <Image
           className="shadow-sm rounded-lg items-center"
@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {title}
         </div>
       </div>
-      <Link href={`/projects${redirect}`}>
+      <Link href={`${redirect}`}>
         <Button content='Overview' style='primary' extendClassName="w-full" />
       </Link>
     </div>
