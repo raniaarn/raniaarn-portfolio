@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/router';
 import { FaChevronDown, FaChevronUp, FaBars } from "react-icons/fa6";
 import { useOnClickOutside, useWindowSize } from 'usehooks-ts'
+import { FaTimes } from 'react-icons/fa';
 
 
 export const Navbar = () => {
@@ -14,7 +15,9 @@ export const Navbar = () => {
   const router = useRouter()
   const path = router.pathname
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  const [dropdownOpen2, setDropdownOpen2] = useState<boolean>(false);
   const ref = useRef(null)
+  const refCollapsed = useRef(null)
 
   const handleNavCollapse = () => setIsCollapsed(!isCollapsed)
 
@@ -42,6 +45,10 @@ export const Navbar = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const toggleDropdown2 = () => {
+    setDropdownOpen2(!dropdownOpen2);
   };
 
   useOnClickOutside(ref, () => {
@@ -99,9 +106,16 @@ export const Navbar = () => {
           )}
         </div>
 
-        <button className="flex md:hidden" onClick={handleNavCollapse}>
-          <FaBars className={`${!isTransparent ? 'w-18 text-purple-500' : 'w-18 text-white'}`} />
-        </button>
+        {isCollapsed ? (
+          <button className="flex md:hidden" onClick={handleNavCollapse}>
+            <FaBars className={`${!isTransparent ? 'w-20 text-purple-500' : 'w-20 text-white'}`} />
+          </button>
+        ) : (
+          <button className="flex md:hidden" onClick={handleNavCollapse}>
+            <FaTimes className={`${!isTransparent ? 'w-20 text-purple-500' : 'w-20 text-white'}`} />
+          </button>
+        )}
+
 
       </div>
 
@@ -117,15 +131,14 @@ export const Navbar = () => {
               </Link>
               <div
                 className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}
-                onClick={toggleDropdown}
-                ref={ref}
+                onClick={toggleDropdown2}
               >
                 <div className="flex items-center cursor-pointer gap-2">
                   <span>Project</span>
-                  {dropdownOpen ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
+                  {dropdownOpen2 ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
                 </div>
-                {dropdownOpen && (
-                  <div className={`${isTransparent ? 'mt-2' : 'mt-2'}`}>
+                {dropdownOpen2 && (
+                  <div className='mt-2'>
                     <Link onClick={handleNavCollapse} href="#Applications" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Apps</Link>
                     <Link onClick={handleNavCollapse} href="#Design" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Designs</Link>
                   </div>
