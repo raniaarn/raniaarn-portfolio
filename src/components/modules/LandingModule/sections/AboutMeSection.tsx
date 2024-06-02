@@ -1,8 +1,11 @@
 import { Button } from '@/components/elements';
 import Image from 'next/image'
 import Link from 'next/link';
+import { useWindowSize } from 'usehooks-ts';
 
 export const AboutMeSection = () => {
+  const { width } = useWindowSize()
+
   return (
     <div id='home-header' className={`pt-32 px-4 md:pt-40`}>
       <div className='flex-col my-auto md:flex-row flex mx-8 md:mx-20 items-end'>
@@ -19,7 +22,7 @@ export const AboutMeSection = () => {
               height={40} >
             </Image>
           </div>
-          <div className='text-4xl font-semibold text-white text-center'>
+          <div className={`text-4xl font-semibold text-white ${width < 766 ? 'text-center' : 'text-left'}`}>
             I'm <span className='text-purple-400'>Rania Maharani Narendra</span>
           </div>
           <div className='text-white text-sm mx-4 pb-4 md:mr-24 md:mx-auto text-justify pt-2'>
