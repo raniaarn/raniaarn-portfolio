@@ -22,7 +22,7 @@ export const AboutMeSection = () => {
               height={40} >
             </Image>
           </div>
-          <div className={`text-4xl font-semibold text-white ${width < 766 ? 'text-center' : 'text-left'}`}>
+          <div className={`text-4xl font-semibold text-white text-center md:text-left`}>
             I'm <span className='text-purple-400'>Rania Maharani Narendra</span>
           </div>
           <div className='text-white text-sm mx-4 pb-4 md:mr-24 md:mx-auto text-justify pt-2'>
