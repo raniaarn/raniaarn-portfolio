@@ -15,9 +15,8 @@ export const Navbar = () => {
   const router = useRouter()
   const path = router.pathname
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
-  const [dropdownOpen2, setDropdownOpen2] = useState<boolean>(false);
+  const [dropdownOpenMobile, setDropdownOpenMobile] = useState<boolean>(false);
   const ref = useRef(null)
-  const refCollapsed = useRef(null)
 
   const handleNavCollapse = () => setIsCollapsed(!isCollapsed)
 
@@ -47,8 +46,8 @@ export const Navbar = () => {
     setDropdownOpen(!dropdownOpen);
   };
 
-  const toggleDropdown2 = () => {
-    setDropdownOpen2(!dropdownOpen2);
+  const toggleDropdownMobile = () => {
+    setDropdownOpenMobile(!dropdownOpenMobile);
   };
 
   useOnClickOutside(ref, () => {
@@ -131,13 +130,13 @@ export const Navbar = () => {
               </Link>
               <div
                 className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}
-                onClick={toggleDropdown2}
+                onClick={toggleDropdownMobile}
               >
                 <div className="flex items-center cursor-pointer gap-2">
                   <span>Project</span>
-                  {dropdownOpen2 ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
+                  {dropdownOpenMobile ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
                 </div>
-                {dropdownOpen2 && (
+                {dropdownOpenMobile && (
                   <div className='mt-2'>
                     <Link onClick={handleNavCollapse} href="#Applications" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Apps</Link>
                     <Link onClick={handleNavCollapse} href="#Design" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Designs</Link>
