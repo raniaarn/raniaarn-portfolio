@@ -46,6 +46,15 @@ export const PROJECTS: ProjectCardProps[] = [
     redirect: 'https://github.com/raniaarn/raniaarn-portfolio'
   },
   {
+    title: 'Designs for Organizations and Events',
+    imageUrl: '/images/org.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/ai.svg',
+    ],
+    redirect: '/projects/Events'
+  },
+  {
     title: 'SkillBoozt: Mobile App Research and Design',
     imageUrl: '/images/skillboozt.png',
     skillsUrls: [

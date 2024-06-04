@@ -5,7 +5,8 @@ import {
   SkillBoozt,
   Bansource,
   Guidu,
-  Maams
+  Maams,
+  Events
 } from "@/components/modules/ProjectModule";
 
 const ProjectPage = () => {
@@ -20,6 +21,7 @@ const ProjectPage = () => {
       {projectName === 'SkillBoozt' && <SkillBoozt />}
       {projectName === 'Guidu' && <Guidu />}
       {projectName === 'Maams' && <Maams />}
+      {projectName === 'Events' && <Events />}
     </div>
   )
 }
