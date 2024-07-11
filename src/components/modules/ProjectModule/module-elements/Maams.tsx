@@ -43,7 +43,7 @@ export const Maams = () => {
             <Button content='Prototype' style='primary' />
           </Link>
           <Link href={SUMMARY.repository} target="blank">
-            <Button content='Website' style='outline-light' />
+            <Button content='Repository' style='outline-light' />
           </Link>
         </div>
       </div>
