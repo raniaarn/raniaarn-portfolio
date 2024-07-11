@@ -5,7 +5,7 @@ export const SUMMARY = {
     "Awards", "Deck", "Role", "Articles", "Designs", "PBIs"
   ],
   prototype: "https://www.figma.com/proto/8e6FkXVdDDj8ThIe0Jc9Cy/MAAMS-Design?page-id=163%3A1554&type=design&node-id=163-2805&viewport=946%2C240%2C0.06&t=8Ol3vXnQqRLLTRUn-1&scaling=scale-down-width&starting-point-node-id=163%3A2805&show-proto-sidebar=1&mode=design",
-  link: "https://maams.app"
+  repository: "https://gitlab.cs.ui.ac.id/maams-ppl"
 }
 
 export const AWARDS = {
