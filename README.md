@@ -1,9 +1,9 @@
 # Raniaarn's Portfolio Website
 ## Table of Contents 📔
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [Contact](#contact)
+- [Introduction](#introduction-)
+- [Demo](#demo-️)
+- [Technologies Used](#technologies-used-)
+- [Contact](#contact-️)
 
 ## Introduction 👋
 This is a personal portfolio project built using Next.js. It showcases my projects, skills, and experiences. The purpose of this portfolio is to provide potential employers and clients with an overview of my work and capabilities.
