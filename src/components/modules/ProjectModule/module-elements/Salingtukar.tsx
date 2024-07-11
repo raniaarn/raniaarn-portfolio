@@ -73,7 +73,7 @@ export const SalingTukar = () => {
         summary={summaryContent}
         imageUrl="/images/salingtukar.png"
         title="SalingTukar: Mobile App Research and Design"
-        date="March 2024-present (Ongoing)"
+        date="March - May 2024"
       >
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">

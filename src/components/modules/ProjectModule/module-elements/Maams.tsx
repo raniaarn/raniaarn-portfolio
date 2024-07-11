@@ -56,7 +56,7 @@ export const Maams = () => {
         summary={summaryContent}
         imageUrl="/images/maams.png"
         title="MAAMS: Analysis Validator Website"
-        date="February 2024 - present (Ongoing)"
+        date="February - June 2024"
       >
         <div className="flex flex-col gap-8">
 
