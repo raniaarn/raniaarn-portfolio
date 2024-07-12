@@ -9,14 +9,13 @@ export const ProjectSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map((project, index) => (
-          <div key={index}>
-            <ProjectCard
-              skillsUrls={project.skillsUrls}
-              imageUrl={project.imageUrl}
-              title={project.title}
-              redirect={project.redirect}
-            />
-          </div>
+          <ProjectCard
+            key={index}
+            skillsUrls={project.skillsUrls}
+            imageUrl={project.imageUrl}
+            title={project.title}
+            redirect={project.redirect}
+          />
         ))}
       </div>
       <div id="Design" className="py-4 items-center mx-auto justify-items-center w-full h-[350px]">

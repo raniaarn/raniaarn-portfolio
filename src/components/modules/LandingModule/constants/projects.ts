@@ -28,15 +28,6 @@ export const PROJECTS: ProjectCardProps[] = [
     redirect: '/projects/Bansource'
   },
   {
-    title: 'Memoar-id: Social Media Website',
-    imageUrl: '/images/memoar.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/nextjs.svg'
-    ],
-    redirect: '/projects/Memoar'
-  },
-  {
     title: 'Website Portfolio',
     imageUrl: '/images/Portfolio.png',
     skillsUrls: [
@@ -53,6 +44,15 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/ai.svg',
     ],
     redirect: '/projects/Events'
+  },
+  {
+    title: 'Memoar-id: Social Media Website',
+    imageUrl: '/images/memoar.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/nextjs.svg'
+    ],
+    redirect: '/projects/Memoar'
   },
   {
     title: 'SkillBoozt: Mobile App Research and Design',
