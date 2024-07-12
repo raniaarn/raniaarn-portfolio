@@ -1,6 +1,7 @@
-import { Button, ImageEverywhere, ProjectSkeleton, Tags } from "@/components/elements"
+import { ImageEverywhere, ProjectSkeleton, Tags } from "@/components/elements"
 import dynamic from "next/dynamic";
 import { SUMMARY, EVENTS } from "../constants/eventsConstants";
+import Image from "next/image";
 
 const LayoutComponent = dynamic(
   () => import('@/components/Layout').then(mod => mod.Layout)
@@ -72,7 +73,16 @@ export const Events = () => {
               <hr className="my-1 border-purple-500" />
             </div>
           ))}
+
         </div>
+        <Image
+          className="mx-auto items-center pt-4"
+          src='/images/salingtukar/closing.png'
+          alt="Bye!"
+          width={100}
+          height={100}
+        >
+        </Image>
       </ProjectSkeleton>
     </LayoutComponent >
   )
