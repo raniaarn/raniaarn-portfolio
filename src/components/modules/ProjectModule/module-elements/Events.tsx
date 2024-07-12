@@ -39,8 +39,8 @@ export const Events = () => {
         date="2021 - 2024"
       >
         <div className="flex flex-col gap-8">
-          {EVENTS.map((event, indexx) => (
-            <div id={event.title} className="flex flex-col gap-4">
+          {EVENTS.map((event, index) => (
+            <div key={index} id={event.title} className="flex flex-col gap-4">
               <div className="flex flex-row gap-2">
                 <div className="font-bold text-purple-500 text-xl">
                   {event.title}
@@ -52,7 +52,7 @@ export const Events = () => {
               <div className="text-sm text-black mb-2 text-justify">
                 <ul className="list-disc pl-4 text-justify">
                   {event.descriptions.map((descs, index) =>
-                    <li >
+                    <li key={index}>
                       {descs}
                     </li>
                   )}
@@ -60,14 +60,17 @@ export const Events = () => {
               </div>
               <div className="text-sm text-black mb-2 text-justify">
                 {event.childs?.map((descs, index) =>
-                  <div>
+                  <div key={index}>
                     {descs.descriptions}
-                    <ImageEverywhere size={Number(descs.imageSize)} imageUrl={descs.imageUrls} />
+                    {descs.imageUrls && <ImageEverywhere size={Number(descs.imageSize)} imageUrl={descs.imageUrls} />}
+                    {descs.iframeUrl &&
+                      <iframe className="h-[160px] md:h-[385px] w-full my-4" src={descs.iframeUrl} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
+                    }
                   </div>
                 )}
               </div>
+              <hr className="my-1 border-purple-500" />
             </div>
-
           ))}
         </div>
       </ProjectSkeleton>
