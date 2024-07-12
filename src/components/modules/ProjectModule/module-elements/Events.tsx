@@ -41,18 +41,29 @@ export const Events = () => {
         <div className="flex flex-col gap-8">
           {EVENTS.map((event, indexx) => (
             <div id={event.title} className="flex flex-col gap-4">
-              <div className="font-bold text-purple-500 text-xl">
-                {event.title}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
-                {event.descriptions}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
-                {event.childs?.map((descs, index) => 
-                <div>
-                  {descs.descriptions}
-                  <ImageEverywhere imageUrl={descs.imageUrls} />
+              <div className="flex flex-row gap-2">
+                <div className="font-bold text-purple-500 text-xl">
+                  {event.title}
                 </div>
+                <div className="font-bold text-black-500 text-lg">
+                  - {event.roles}
+                </div>
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                <ul className="list-disc pl-4 text-justify">
+                  {event.descriptions.map((descs, index) =>
+                    <li >
+                      {descs}
+                    </li>
+                  )}
+                </ul>
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {event.childs?.map((descs, index) =>
+                  <div>
+                    {descs.descriptions}
+                    <ImageEverywhere size={Number(descs.imageSize)} imageUrl={descs.imageUrls} />
+                  </div>
                 )}
               </div>
             </div>
