@@ -22,15 +22,15 @@ export const SkillBoozt = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="font-semibold text-black text-lg">
+        </p>
+        <h3 className="font-semibold text-black text-lg">
           Navigations to Deliverables
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-4 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div className="span-col-1">
@@ -38,9 +38,9 @@ export const SkillBoozt = () => {
             </div>
           ))}
         </div>
-        <div className="font-semibold text-black text-lg">
+        <h3 className="font-semibold text-black text-lg">
           Links to Docs
-        </div>
+        </h3>
         <div className='flex-row flex gap-4 w-full justify-start'>
           <Link href={SUMMARY.Documentation} target="blank">
             <Button content='Documentation' style='primary' />
@@ -63,9 +63,9 @@ export const SkillBoozt = () => {
       >
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
+            </h2>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.roles.map((roleItem, index) => (
@@ -79,28 +79,24 @@ export const SkillBoozt = () => {
 
           {/** Decks */}
           <div id="Decks" className="flex flex-col gap-4 text-justify">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DECK.title}
-            </div>
+            </h2>
             <Link href={DECK.srcPDF} target="blank">
-              <button className='h-10 w-full px-8 py-2 bg-gradient-to-b from-violet-400 to-purple-800 hover:bg-gradient-to-b hover:from-purple-300 hover:to-violet-400 rounded-[40px] justify-center items-center gap-2.5 inline-flex'>
-                <div className='text-white'>
-                  Presentation Deck
-                </div>
-              </button>
+              <Button content="Link To Presentation" style="primary" extendClassName="w-full" />
             </Link>
           </div>
 
           {/** Canvas */}
           <div id="Exploration Canvas" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {CANVAS.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {CANVAS.description}
-              </div>
+              </p>
               {CANVAS.imageUrls.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -109,19 +105,20 @@ export const SkillBoozt = () => {
 
           {/** Introduction */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {INTRO.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {CANVAS.description}
-              </div>
+              </p>
               {INTRO.sections.map((item) => (
                 <>
-                  <div className="font-semibold text-black">
+                  <h3 className="font-semibold text-black">
                     {item.title}
-                  </div><div className="text-black">
+                  </h3>
+                  <div className="text-black">
                     <ul className="list-disc text-sm pl-8 text-justify">
                       {item.list.map((roleItem, index) => (
                         <li key={index}>
@@ -137,27 +134,27 @@ export const SkillBoozt = () => {
 
           {/** Research */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {RESEARCH.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black text-justify">
+              <p className="text-sm text-black text-justify">
                 {RESEARCH.description}
-              </div>
+              </p>
             </div>
           </div>
 
           {/** Persona */}
           <div id="User Persona" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PERSONA.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black text-justify">
+              <p className="text-sm text-black text-justify">
                 {PERSONA.description}
-              </div>
+              </p>
               {PERSONA.imageUrls.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -166,58 +163,58 @@ export const SkillBoozt = () => {
 
           {/** Journey Map */}
           <div id="User Journey Map" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {JOURNEY.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black text-justify">
+              <p className="text-sm text-black text-justify">
                 {JOURNEY.description}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={JOURNEY.flowImgUrl} />
-              <div className="text-sm text-black text-justify">
+              <p className="text-sm text-black text-justify">
                 {JOURNEY.description2}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={JOURNEY.journeyImgUrl} />
             </div>
           </div>
 
           {/** Design */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DESIGN.title}
-            </div>
+            </h2>
 
             {/** Design: IA */}
             <div id="Sitemap (IA)" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {DESIGN.ia}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {DESIGN.iaDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DESIGN.iaImageUrl} />
             </div>
 
             {/** Design: wireframe */}
             <div id="Wireframe" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {DESIGN.wireframe}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {DESIGN.wireframeDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DESIGN.wireframeImageUrl} />
             </div>
 
             {/** Design: Prototype */}
             <div id="Prototype" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {DESIGN.prototype}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {DESIGN.prototypeDesc}
-              </div>
+              </p>
               {DESIGN.prototypeImageUrls.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -226,25 +223,25 @@ export const SkillBoozt = () => {
 
           {/** Testing */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {TESTING.title}
-            </div>
+            </h2>
 
             <div id="Evaluation" className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.description}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={TESTING.imageUrl} />
             </div>
 
             {/** SUS */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {TESTING.sus}
-              </div>
-              <div className="text-sm text-black mb-2">
+              </h3>
+              <p className="text-sm text-black mb-2">
                 {TESTING.susDesc}
-              </div>
+              </p>
             </div>
 
           </div>

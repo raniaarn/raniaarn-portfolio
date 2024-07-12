@@ -26,15 +26,15 @@ export const SalingTukar = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="text-sm">
+        </p>
+        <p className="text-sm">
           The Purpose of this App:
-        </div>
+        </p>
         <ul className="list-disc pl-8 text-justify">
           {SUMMARY.purpose.map((roleItem, index) => (
             <li className="text-sm" key={index}>
@@ -42,9 +42,9 @@ export const SalingTukar = () => {
             </li>
           ))}
         </ul>
-        <div className="font-semibold text-black text-lg">
+        <h3 className="font-semibold text-black text-lg">
           Navigations to Deliverables
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-4 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div key={index} className="span-col-1">
@@ -52,9 +52,9 @@ export const SalingTukar = () => {
             </div>
           ))}
         </div>
-        <div className="font-semibold text-black text-lg">
+        <h3 className="font-semibold text-black text-lg">
           Links to Docs
-        </div>
+        </h3>
         <div className='flex-row flex gap-4 w-full justify-start'>
           <Link href={SUMMARY.Documentation} target="blank">
             <Button content='Documentation' style='primary' />
@@ -77,9 +77,9 @@ export const SalingTukar = () => {
       >
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
+            </h2>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.roles.map((roleItem, index) => (
@@ -93,38 +93,38 @@ export const SalingTukar = () => {
 
           {/** DESIGN THINKING */}
           <div className="flex flex-col gap-4 text-justify">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DT.title}
-            </div>
-            <div className="text-sm text-black">
+            </h2>
+            <p className="text-sm text-black">
               {DT.description}
-            </div>
+            </p>
             <ImageEverywhere imageUrl={DT.imageUrl} />
           </div>
 
           {/** CONSTRAINTS */}
           <div className="flex flex-col gap-4 text-justify">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {CONSTRAINTS.title}
-            </div>
-            <div className="text-sm text-black">
+            </h2>
+            <p className="text-sm text-black">
               {CONSTRAINTS.description}
-            </div>
+            </p>
           </div>
 
           {/** Research PLAN */}
           <div id="Decks" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PLAN.title}
-            </div>
+            </h2>
 
             <iframe className="w-4/5 md:w-5/6 h-[300px] mx-auto justify-items-center" src={PLAN.sourcePDF} />
 
             {/** Research PLAN: Objectives */}
             <div className="flex flex-col gap-2">
-              <div className=" font-semibold text-black text-lg">
+              <h3 className=" font-semibold text-black text-lg">
                 {PLAN.objective}
-              </div>
+              </h3>
               <div className="text-sm text-black">
                 <ul className="list-disc pl-8 text-justify">
                   {PLAN.objectives.map((item: any, index: number) => (
@@ -138,9 +138,9 @@ export const SalingTukar = () => {
 
             {/** Research PLAN: Hypothesis */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {PLAN.hypo}
-              </div>
+              </h3>
               <div className="text-sm text-black">
                 <ul className="list-disc pl-8 text-justify">
                   {PLAN.hypothesis.map((item: any, index: number) => (
@@ -154,26 +154,26 @@ export const SalingTukar = () => {
 
             {/** Research Plan: Methodology */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {PLAN.methodology}
-              </div>
-              <div className="text-sm text-black mb-2">
+              </h3>
+              <p className="text-sm text-black mb-2">
                 {PLAN.methodDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={PLAN.methodImageURL} />
             </div>
           </div>
 
           {/** Research PLAN: Findings */}
           <div className="flex flex-col gap-2">
-            <div className="font-semibold text-black">
+            <h3 className="font-semibold text-black">
               {PLAN.findings}
-            </div>
+            </h3>
             {PLAN.findingsList.map((item: any) => (
               <>
-                <div className="text-purple-500">
+                <p className="text-purple-500">
                   {item.title}
-                </div>
+                </p>
                 <ul className="text-sm list-disc pl-8 text-justify">
                   {item.list.map((point: any) => (
                     <li>
@@ -188,53 +188,53 @@ export const SalingTukar = () => {
 
           {/** EMPATHIZE */}
           < div className="flex flex-col gap-4" >
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {EMPATHIZE.title}
-            </div>
+            </h2>
 
             {/** EMPATHIZE: affinity mapping */}
             < div className="flex flex-col gap-2" >
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.affinity}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.affinityDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={EMPATHIZE.affinityDocs} />
             </div>
 
 
             {/** EMPATHIZE: 4 Whys */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.fourwhy}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.fourwhyDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={EMPATHIZE.fourwImageUrl} />
             </div>
 
 
             {/** EMPATHIZE: User Persona */}
             <div id="User Persona" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.persona}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.personaDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={EMPATHIZE.personaImageUrl} />
             </div>
 
             {/** EMPATHIZE: User Journey Map */}
             <div id="Journey Map" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.journey}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.journeyDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={EMPATHIZE.journeyImageUrl} />
             </div>
           </div>
@@ -242,26 +242,26 @@ export const SalingTukar = () => {
 
           {/** DEFINE */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DEFINE.title}
-            </div>
+            </h2>
 
             {/** DEFINE: How Might We */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {DEFINE.hmw}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {DEFINE.hmwdesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DEFINE.hmwImageUrl} />
-              <div className="text-sm text-black mt-2 mb-2 text-justify">
+              <p className="text-sm text-black mt-2 mb-2 text-justify">
                 {DEFINE.prioDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DEFINE.hmwPrioUrl} />
-              <div className="text-sm text-black mt-2 mb-2 text-justify">
+              <p className="text-sm text-black mt-2 mb-2 text-justify">
                 {DEFINE.afterPrioDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DEFINE.hmwafterUrl} />
               <ImageEverywhere imageUrl={DEFINE.featureImgUrl} />
             </div>
@@ -269,18 +269,18 @@ export const SalingTukar = () => {
 
           {/** IDEATION */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {IDEATION.title}
-            </div>
+            </h2>
 
             {/** IDEATION: crazy 8 */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {IDEATION.crazy}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.crazy8Desc}
-              </div>
+              </p>
               {IDEATION.crazyImgUrls.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -288,23 +288,23 @@ export const SalingTukar = () => {
 
             {/** IDEATION: IA */}
             <div id="Sitemap (IA)" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {IDEATION.ia}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.iaDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={IDEATION.iaImgUrl} />
             </div>
 
             {/** IDEATION: Flows */}
             <div id="Flows" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {IDEATION.flow}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.flowDesc}
-              </div>
+              </p>
               {IDEATION.flowImgUrls.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -313,31 +313,31 @@ export const SalingTukar = () => {
 
           {/** PROTOTYPE */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PROTOTYPE.title}
-            </div>
+            </h2>
 
             {/** PROTOTYPE: Moodboard */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {PROTOTYPE.moodboard}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {PROTOTYPE.moodboardDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={PROTOTYPE.moodboardImgUrl} />
             </div>
 
             {/** PROTOTYPE: Design System */}
             <div id="Design System" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {PROTOTYPE.designSystem}
-              </div>
+              </h3>
               {PROTOTYPE.designSystemList.map((item: any, index: number) => (
                 <div key={index}>
-                  <div className="text-sm text-black mb-2 text-justify">
+                  <p className="text-sm text-black mb-2 text-justify">
                     {item.desc}
-                  </div>
+                  </p>
                   <ImageEverywhere imageUrl={item.imageUrl} />
                 </div>
               ))}
@@ -345,12 +345,12 @@ export const SalingTukar = () => {
 
             {/** PROTOTYPE: High Fidelity */}
             <div id="UI" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {PROTOTYPE.prototypeSubtitle}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {PROTOTYPE.prototypeDesc}
-              </div>
+              </p>
               <Link href={PROTOTYPE.prototypeUrl} target="blank">
                 <Button style="primary" content="First Prototype" extendClassName="w-full" />
               </Link>
@@ -362,17 +362,17 @@ export const SalingTukar = () => {
 
           {/** TESTING */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {TESTING.title}
-            </div>
+            </h2>
 
             <div id="Test Plan" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {TESTING.preparation}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.preparationDesc}
-              </div>
+              </p>
               <ul className="text-sm list-disc pl-8 text-justify">
                 {TESTING.preparationList.map((point: any, index: number) => (
                   <li key={index}>
@@ -383,12 +383,12 @@ export const SalingTukar = () => {
             </div>
 
             <div id="Testing Result" className="flex flex-col gap-2 mb-4">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {TESTING.result}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.resultDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={TESTING.resultImgUrl} />
               <Link href={TESTING.mazeUrl} target="blank">
                 <Button style="primary" content="Maze Report" extendClassName="w-full" />
@@ -396,67 +396,67 @@ export const SalingTukar = () => {
             </div>
 
             <div id="Redesign" className="flex flex-col gap-4">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {TESTING.issue}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.issueDesc}
-              </div>
+              </p>
 
-              <div className="text-sm text-purple-500 font-semibold">
+              <h3 className="text-sm text-purple-500 font-semibold">
                 {TESTING.issuesRent}
-              </div>
+              </h3>
               {TESTING.issuesRentList.map((item: any, index: number) => (
                 <div key={index}>
-                  <div className="text-sm font-semibold text-black mb-2 text-justify">
+                  <h4 className="text-sm font-semibold text-black mb-2 text-justify">
                     {item.subtitle}
-                  </div>
+                  </h4>
                   <ImageEverywhere imageUrl={item.imageUrl} />
-                  <div className="text-sm text-black mb-2 text-justify">
+                  <p className="text-sm text-black mb-2 text-justify">
                     {item.desc}
-                  </div>
-                  <div className="text-sm text-black mb-2 text-justify">
+                  </p>
+                  <p className="text-sm text-black mb-2 text-justify">
                     {item.justify}
-                  </div>
+                  </p>
                   <ImageEverywhere imageUrl={item.redesign} />
                 </div>
               ))}
 
-              <div className="text-sm text-purple-500 font-semibold">
+              <h3 className="text-sm text-purple-500 font-semibold">
                 {TESTING.issuesTracker}
-              </div>
+              </h3>
               {TESTING.issuesTrackerList.map((item: any, index: number) => (
                 <div key={index}>
-                  <div className="text-sm font-semibold text-black mb-2 text-justify">
+                  <h4 className="text-sm font-semibold text-black mb-2 text-justify">
                     {item.subtitle}
-                  </div>
+                  </h4>
                   <ImageEverywhere imageUrl={item.imageUrl} />
-                  <div className="text-sm text-black mb-2 text-justify">
+                  <p className="text-sm text-black mb-2 text-justify">
                     {item.desc}
-                  </div>
+                  </p>
                   <ImageEverywhere imageUrl={item.redesign} />
                 </div>
               ))}
 
-              <div className="text-sm text-purple-500 font-semibold">
+              <h3 className="text-sm text-purple-500 font-semibold">
                 {TESTING.issuesRating.title}
-              </div>
+              </h3>
               <ImageEverywhere imageUrl={TESTING.issuesRating.imageUrl} />
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.issuesRating.desc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={TESTING.issuesRating.redesign} />
 
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.newAdditionDesc}
-              </div>
+              </p>
 
               {TESTING.newAdditionImgUrls.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {TESTING.conclude}
-              </div>
+              </p>
               <iframe height={385} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNj4SADnHohHJEh0SeSiYDy%2FDesign%3Fpage-id%3D796%253A60%26type%3Ddesign%26node-id%3D817-18367%26viewport%3D1555%252C-115%252C0.23%26t%3D6AMNlp8X3lGqxqIW-1%26scaling%3Dscale-down%26starting-point-node-id%3D817%253A18348%26mode%3Ddesign" allowFullScreen></iframe>
 
               <iframe id="Prototype" className="h-[160px] md:h-[385px]" src="https://www.youtube.com/embed/612JMNAU1Jw?si=Ejn3y3hVVPe9CaLp" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
@@ -466,34 +466,34 @@ export const SalingTukar = () => {
 
           {/** CONCLUSION */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {CONCLUSION.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {CONCLUSION.desc}
-            </div>
+            </p>
           </div>
 
           {/** RECOMMENDATION */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {RECOMMENDATION.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {RECOMMENDATION.desc}
-            </div>
+            </p>
           </div>
 
           {/** END */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {END.title}
-            </div>
+            </h2>
             <div className="text-sm text-black mb-2 text-justify">
               {END.desc.map((item: any, index: number) => (
-                <div key={index} className="text-sm text-black mb-2 text-justify">
+                <p key={index} className="text-sm text-black mb-2 text-justify">
                   {item}
-                </div>
+                </p>
               ))}
             </div>
             <Image

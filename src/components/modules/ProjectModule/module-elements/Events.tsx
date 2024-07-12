@@ -10,15 +10,15 @@ export const Events = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="font-semibold text-black text-lg">
+        </p>
+        <h3 className="font-semibold text-black text-lg">
           Navigations
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-3 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div className="span-col-1">
@@ -35,19 +35,19 @@ export const Events = () => {
       <ProjectSkeleton
         summary={summaryContent}
         imageUrl="/images/org.png"
-        title=""
+        title="Designs for Organizations and Events"
         date="2021 - 2024"
       >
         <div className="flex flex-col gap-8">
           {EVENTS.map((event, index) => (
             <div key={index} id={event.title} className="flex flex-col gap-4">
               <div className="flex flex-row gap-2">
-                <div className="font-bold text-purple-500 text-xl">
+                <h2 className="font-bold text-purple-500 text-xl">
                   {event.title}
-                </div>
-                <div className="font-bold text-black-500 text-lg">
+                </h2>
+                <h2 className="font-bold text-black-500 text-lg">
                   - {event.roles}
-                </div>
+                </h2>
               </div>
               <div className="text-sm text-black mb-2 text-justify">
                 <ul className="list-disc pl-4 text-justify">

@@ -22,15 +22,15 @@ export const Maams = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="font-semibold text-black text-lg">
+        </p>
+        <h3 className="font-semibold text-black text-lg">
           Navigations
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-3 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div className="span-col-1">
@@ -62,23 +62,23 @@ export const Maams = () => {
 
           { /** AWARD */}
           <div id="Awards" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {AWARDS.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {AWARDS.description}
-            </div>
+            </p>
             <ImageEverywhere imageUrl={AWARDS.imageUrl} />
           </div>
 
           { /** ROLES */}
           <div id="Roles" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {ROLE.description}
-            </div>
+            </p>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.list.map((roleItem, index) => (
@@ -93,23 +93,23 @@ export const Maams = () => {
 
           { /** PITCHDECK */}
           <div id="Deck" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DECK.title}
-            </div>
+            </h2>
             <iframe className="w-4/5 md:w-5/6 h-[300px] mx-auto justify-items-center" src={DECK.slide} />
             <iframe className="w-[100%] mx-auto h-[385px] md:h-[385px] sm:h-[160px]" src="https://www.youtube.com/embed/i9YhQCxn04w?si=8zNyo6TTObuOtk-F" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen />
           </div>
 
           { /** Documentation */}
           <div id="Articles" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DOCUMENTATION.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {DOCUMENTATION.description}
-              </div>
+              </p>
               <Link href={DOCUMENTATION.documentation} target="blank">
                 <Button style="primary" content="Articles" extendClassName="w-full" />
               </Link>
@@ -119,31 +119,31 @@ export const Maams = () => {
 
           { /** Agile */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {AGILE.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {AGILE.description}
-              </div>
+              </p>
             </div>
           </div>
 
           {/** Prasprint */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PRASPRINT.title}
-            </div>
+            </h2>
             {PRASPRINT.sections.map((item) => (
               <div id={item.title} className="text-black flex flex-col gap-2">
-                <div className="font-semibold text-black">
+                <h3 className="font-semibold text-black">
                   {item.title}
-                </div>
+                </h3>
                 {(item.description).map((descriptions) => (
-                  <div className="text-sm text-black mb-2 text-justify">
+                  <p className="text-sm text-black mb-2 text-justify">
                     {descriptions}
-                  </div>
+                  </p>
                 ))}
                 {(item.urlImage).map((urls) => (
                   <div className="text-sm text-black mb-2 text-justify">
@@ -157,21 +157,21 @@ export const Maams = () => {
 
           { /** Sprint Planning */}
           <div id="PBIs" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {SPRINTPLANNING.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {SPRINTPLANNING.description}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={SPRINTPLANNING.imageUrl} />
             </div>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {SPRINTPLANNING.description2}
-              </div>
+              </p>
               {SPRINTPLANNING.imageUrls_2.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -181,9 +181,9 @@ export const Maams = () => {
 
           { /** Daily Scrum */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DAILYSCRUM.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
               <div className="text-sm text-black mb-2 text-justify">
@@ -199,14 +199,14 @@ export const Maams = () => {
 
           { /** Review */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {REVIEW.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {REVIEW.description}
-              </div>
+              </p>
             </div>
           </div>
 

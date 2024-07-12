@@ -114,9 +114,9 @@ export const SkillSection = () => {
 
   return (
     <div data-aos="fade-up" id="skills" className=" h-full flex flex-col items-center gap-4 mx-16 my-12">
-      <div className="items-center item-center justify-center font-bold text-2xl">
+      <h2 className="items-center item-center justify-center font-bold text-2xl">
         Skills and Tools
-      </div>
+      </h2>
       <div className="h-full w-full flex flex-col items-center md:hidden">
         <div
           ref={sliderRef}

@@ -21,15 +21,15 @@ export const Bansource = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="font-semibold text-black text-lg">
+        </p>
+        <h3 className="font-semibold text-black text-lg">
           Navigations to Deliverables
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-4 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div className="span-col-1">
@@ -37,9 +37,9 @@ export const Bansource = () => {
             </div>
           ))}
         </div>
-        <div className="font-semibold text-black text-lg">
+        <h3 className="font-semibold text-black text-lg">
           Links to Docs
-        </div>
+        </h3>
         <div className='flex-row flex gap-4 w-full justify-start'>
           <Link href={SUMMARY.Guidebook} target="blank">
             <Button content='Guidebook' style='primary' />
@@ -62,9 +62,9 @@ export const Bansource = () => {
       >
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
+            </h2>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.roles.map((roleItem, index) => (
@@ -78,9 +78,9 @@ export const Bansource = () => {
 
           {/** Decks */}
           <div id="Decks" className="flex flex-col gap-4 text-justify">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DECK.title}
-            </div>
+            </h2>
             <Link href={DECK.srcPDF} target="blank">
               <Button style="primary" content="Canva's Deck" extendClassName="w-full" />
             </Link>
@@ -88,9 +88,9 @@ export const Bansource = () => {
 
           {/** Research */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {RESEARCH.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
               <div className="text-sm text-black">
@@ -102,29 +102,29 @@ export const Bansource = () => {
 
           {/** Empathize */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {EMPATHIZE.title}
-            </div>
+            </h2>
 
             {/** Empathize: Empathy mapping */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.empathy}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.empathyDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={EMPATHIZE.empathyImageUrl} />
             </div>
 
             {/** Empathize: User Persona */}
             <div id="User Persona" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.persona}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.personaDesc}
-              </div>
+              </p>
               {EMPATHIZE.personaImageUrl.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -132,12 +132,12 @@ export const Bansource = () => {
 
             {/** Empathize: User Journey Map */}
             <div id="User Journey Map" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {EMPATHIZE.journey}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {EMPATHIZE.journeyDesc}
-              </div>
+              </p>
               {EMPATHIZE.journeyImageUrls.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -147,47 +147,47 @@ export const Bansource = () => {
 
           {/** DEFINE */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DEFINE.title}
-            </div>
+            </h2>
 
             {/** DEFINE: How Might We */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {DEFINE.hmw}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {DEFINE.hmwdesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={DEFINE.hmwImageUrl} />
             </div>
           </div>
 
           {/** Ideation */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {IDEATION.title}
-            </div>
+            </h2>
 
             {/** IDEATION: IA */}
             <div id="Sitemap (IA)" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {IDEATION.ia}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.iaDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={IDEATION.iaImgUrl} />
             </div>
 
             {/** IDEATION: Flows */}
             <div className="flex flex-col gap-2">
-              <div id="Userflow" className="font-semibold text-black">
+              <h3 id="Userflow" className="font-semibold text-black">
                 {IDEATION.flow}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.flowDesc}
-              </div>
+              </p>
               {IDEATION.flowImgUrls.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -196,27 +196,27 @@ export const Bansource = () => {
 
             {/** IDEATION: Wireframe */}
             <div id="Wireframe" className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {IDEATION.wireframe}
-              </div>
-              <div className="text-sm text-black mb-2 text-justify">
+              </h3>
+              <p className="text-sm text-black mb-2 text-justify">
                 {IDEATION.wireframeDesc}
-              </div>
+              </p>
               <ImageEverywhere imageUrl={IDEATION.wireframeImageUrl} />
             </div>
           </div>
 
           {/** Prototype */}
           <div id="Prototype" className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PROTOTYPE.title}
-            </div>
+            </h2>
 
             {/** PROTOTYPE: High Fidelity */}
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {PROTOTYPE.Description}
-              </div>
+              </p>
               {PROTOTYPE.prototypeImgUrl.map((item, index) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
@@ -225,9 +225,9 @@ export const Bansource = () => {
 
           {/** Testing */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {TESTING.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
               <div className="text-sm text-black mb-2 text-justify">

@@ -17,12 +17,12 @@ export const ProjectSkeleton: React.FC<ProjectSkeletonProps> = ({
           width={600}
           height={600} >
         </Image>
-        <div className="text-white font-semibold text-xl text-center py-4">
+        <h1 className="text-white font-semibold text-xl text-center py-4">
           {title}
-        </div>
-        <div className="text-white text-md text-center">
+        </h1>
+        <h3 className="text-white text-md text-center">
           {date}
-        </div>
+        </h3>
       </div>
       <div id="skills" className="bg-white py-6 px-12 md:px-72 text-justify">
         {summary}

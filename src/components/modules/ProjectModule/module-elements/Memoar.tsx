@@ -11,12 +11,12 @@ export const Memoar = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div>
+        </h2>
+        <p>
           {SUMMARY.summary}
-        </div>
+        </p>
         <div className='flex-row flex gap-4 w-full justify-start'>
           <Link href={SUMMARY.github} target="blank">
             <Button content='Github' style='primary' />
@@ -39,9 +39,9 @@ export const Memoar = () => {
       >
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
+            </h2>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.roles.map((roleItem, index) => (
@@ -53,17 +53,17 @@ export const Memoar = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 text-justify">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {CONSTRAINTS.title}
-            </div>
-            <div className="text-black">
+            </h2>
+            <p className="text-black">
               {CONSTRAINTS.description}
-            </div>
+            </p>
           </div>
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {DOCUMENTATION.title}
-            </div>
+            </h2>
             <ImageEverywhere imageUrl={DOCUMENTATION.imageUrl} />
           </div>
         </div>

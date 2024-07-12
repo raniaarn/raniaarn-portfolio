@@ -18,15 +18,15 @@ export const Guidu = () => {
   const summaryContent = (
     <>
       <div className="flex flex-col gap-4">
-        <div className="font-bold text-purple-500 text-xl">
+        <h2 className="font-bold text-purple-500 text-xl">
           {SUMMARY.title}
-        </div>
-        <div className="text-sm">
+        </h2>
+        <p className="text-sm">
           {SUMMARY.summary}
-        </div>
-        <div className="font-semibold text-black text-lg">
+        </p>
+        <h3 className="font-semibold text-black text-lg">
           Navigations to Deliverables
-        </div>
+        </h3>
         <div className="text-sm grid items-center grid-cols-3 gap-2">
           {SUMMARY.deliverables.map((item, index) => (
             <div className="span-col-1">
@@ -34,9 +34,9 @@ export const Guidu = () => {
             </div>
           ))}
         </div>
-        <div className="font-semibold text-black text-lg">
+        <h3 className="font-semibold text-black text-lg">
           Link to Prototype
-        </div>
+        </h3>
         <Link href={SUMMARY.Prototype} target="blank">
           <Button content='Prototype' style='primary' extendClassName="w-full" />
         </Link>
@@ -56,25 +56,25 @@ export const Guidu = () => {
 
           { /** Problem Statement */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PROBLEM.title}
-            </div>
+            </h2>
             {PROBLEM.paragraphs.map((item, index) => (
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {item}
-              </div>
+              </p>
             ))}
             <ImageEverywhere imageUrl={PROBLEM.imageUrl} />
           </div>
 
           { /** Users */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {TARGET.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {TARGET.description}
-            </div>
+            </p>
             <div className="text-black">
               <ol className="list-disc pl-8 text-justify">
                 {TARGET.list.map((item, index) => (
@@ -88,12 +88,12 @@ export const Guidu = () => {
 
           { /** ROLES */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {ROLE.title}
-            </div>
-            <div className="text-sm text-black mb-2 text-justify">
+            </h2>
+            <p className="text-sm text-black mb-2 text-justify">
               {ROLE.description}
-            </div>
+            </p>
             <div className="text-black">
               <ul className="list-disc pl-8 text-justify">
                 {ROLE.list.map((roleItem, index) => (
@@ -107,21 +107,21 @@ export const Guidu = () => {
 
           { /** Scope & Constraints */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {SCOPE.title}
-            </div>
+            </h2>
 
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {SCOPE.description}
-              </div>
+              </p>
             </div>
 
             {/** Scope */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {SCOPE.scope}
-              </div>
+              </h3>
               <div className="text-black">
                 <ul className="list-disc pl-8 text-justify">
                   {SCOPE.scopeList.map((item, index) => (
@@ -135,9 +135,9 @@ export const Guidu = () => {
 
             {/** Constraints */}
             <div className="flex flex-col gap-2">
-              <div className="font-semibold text-black">
+              <h3 className="font-semibold text-black">
                 {SCOPE.constraints}
-              </div>
+              </h3>
               <div className="text-sm text-black mb-2 text-justify">
                 {SCOPE.constraintsDesc}
               </div>
@@ -146,18 +146,18 @@ export const Guidu = () => {
 
           {/** Process */}
           <div className="flex flex-col gap-4">
-            <div className="font-bold text-purple-500 text-xl">
+            <h2 className="font-bold text-purple-500 text-xl">
               {PROCESS.title}
-            </div>
+            </h2>
             {PROCESS.sections.map((item) => (
               <div id={item.title} className="text-black flex flex-col gap-2">
-                <div className="font-semibold text-black">
+                <h3 className="font-semibold text-black">
                   {item.title}
-                </div>
+                </h3>
                 {(item.description).map((descriptions) => (
-                  <div className="text-sm text-black mb-2 text-justify">
+                  <p className="text-sm text-black mb-2 text-justify">
                     {descriptions}
-                  </div>
+                  </p>
                 ))}
                 {(item.urlImage).map((urls) => (
                   <div className="text-sm text-black mb-2 text-justify">

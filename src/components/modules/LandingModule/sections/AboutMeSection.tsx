@@ -22,12 +22,12 @@ export const AboutMeSection = () => {
               height={40} >
             </Image>
           </div>
-          <div className={`text-4xl font-semibold text-white text-center md:text-left`}>
+          <h1 className={`text-4xl font-semibold text-white text-center md:text-left`}>
             I'm <span className='text-purple-400'>Rania Maharani Narendra</span>
-          </div>
-          <div className='text-white text-sm mx-4 pb-4 md:mr-24 md:mx-auto text-justify pt-2'>
+          </h1>
+          <p className='text-white text-sm mx-4 pb-4 md:mr-24 md:mx-auto text-justify pt-2'>
             Currently pursuing my undergraduate studies at the Faculty of Computer Science at the University of Indonesia. My academic and non academic journeys fueled my passion for UI/UX, Graphic Design, and Software Development.
-          </div>
+          </p>
           <div className='flex-row pb-6 md:pb-16 flex gap-8 w-full justify-center md:justify-start'>
             <Link href="#contact">
               <Button content='Contact Me' style='primary' />
