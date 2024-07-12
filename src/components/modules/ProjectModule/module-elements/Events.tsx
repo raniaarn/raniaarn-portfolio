@@ -1,6 +1,6 @@
 import { Button, ImageEverywhere, ProjectSkeleton, Tags } from "@/components/elements"
 import dynamic from "next/dynamic";
-import { SUMMARY } from "../constants/eventsConstants";
+import { SUMMARY, EVENTS } from "../constants/eventsConstants";
 
 const LayoutComponent = dynamic(
   () => import('@/components/Layout').then(mod => mod.Layout)
@@ -39,7 +39,25 @@ export const Events = () => {
         date="2021 - 2024"
       >
         <div className="flex flex-col gap-8">
+          {EVENTS.map((event, indexx) => (
+            <div id={event.title} className="flex flex-col gap-4">
+              <div className="font-bold text-purple-500 text-xl">
+                {event.title}
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {event.descriptions}
+              </div>
+              <div className="text-sm text-black mb-2 text-justify">
+                {event.childs?.map((descs, index) => 
+                <div>
+                  {descs.descriptions}
+                  <ImageEverywhere imageUrl={descs.imageUrls} />
+                </div>
+                )}
+              </div>
+            </div>
 
+          ))}
         </div>
       </ProjectSkeleton>
     </LayoutComponent >
