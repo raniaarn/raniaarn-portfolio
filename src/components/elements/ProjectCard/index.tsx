@@ -8,10 +8,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   skillsUrls,
   title,
   redirect,
-  redirectOutside
+  redirectOutside,
+  lastItem
 }) => {
   return (
-    <div id="Applications" className="max-w-[300px] pb-4 h-full flex flex-col rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4">
+    <div id="Applications" className={`max-w-[300px] pb-2 h-full flex flex-col rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4 ${lastItem && "md:col-span-2 md:justify-self-center"}`}>
       <Image
         className="shadow-sm items-center"
         src={imageUrl}
@@ -31,11 +32,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             />
           ))}
         </div>
-        <h5 className="items-start text-sm font-bold">
+        <h5 className="items-start text-sm font-semibold">
           {title}
         </h5>
       </div>
-      <Link href={`${redirect}`} target={redirectOutside ? "_blank" : "_self"} className="px-4 py-0 w-full flex justify-start">
+      <Link href={`${redirect}`} target={redirectOutside ? "_blank" : "_self"} className="px-4 w-full flex justify-start">
         <Button content='Overview' style='project-card' />
       </Link>
     </div>

@@ -6,4 +6,5 @@ interface ProjectCardProps {
   title: string
   redirect: string
   redirectOutside?: string
+  lastItem?: boolean
 };

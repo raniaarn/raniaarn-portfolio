@@ -16,6 +16,7 @@ export const ProjectSection = () => {
             title={project.title}
             redirect={project.redirect}
             redirectOutside={project.redirectOutside}
+            lastItem={project.lastItem}
           />
         ))}
       </div>

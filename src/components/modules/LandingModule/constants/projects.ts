@@ -79,6 +79,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect: '/projects/Guidu'
+    redirect: '/projects/Guidu',
+    lastItem: true
   },
 ]
