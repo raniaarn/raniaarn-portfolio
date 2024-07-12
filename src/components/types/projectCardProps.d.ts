@@ -5,4 +5,5 @@ interface ProjectCardProps {
   skillsUrls: string[]
   title: string
   redirect: string
+  redirectOutside?: string
 };

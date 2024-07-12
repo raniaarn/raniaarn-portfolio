@@ -2,8 +2,9 @@ import { ToolsItem } from "./ToolsItem"
 
 export const Tools = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-8 md:gap-16 w-full lg:w-[90%] xl:w-[75%] pt-8">
+    <div className="flex flex-wrap justify-center gap-8 md:gap-16 w-[50%] md:w-[90%] lg:w-[80%] xl:w-[62%] pt-8">
       <ToolsItem image='/images/figma.svg' />
+      <ToolsItem image='/images/maze.svg' />
       <ToolsItem image='/images/ai.svg' />
       <ToolsItem image='/images/ps.svg' />
       <ToolsItem image='/images/nextjs.svg' />

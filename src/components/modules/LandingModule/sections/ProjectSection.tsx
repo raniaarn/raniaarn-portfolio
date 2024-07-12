@@ -15,6 +15,7 @@ export const ProjectSection = () => {
             imageUrl={project.imageUrl}
             title={project.title}
             redirect={project.redirect}
+            redirectOutside={project.redirectOutside}
           />
         ))}
       </div>

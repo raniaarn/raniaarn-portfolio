@@ -7,7 +7,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   skillsUrls,
   title,
-  redirect
+  redirect,
+  redirectOutside
 }) => {
   return (
     <div id="Applications" className="max-w-[300px] pb-4 h-full flex flex-col rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4">
@@ -22,6 +23,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="items-start flex flex-row gap-4">
           {skillsUrls.map((skill) => (
             <Image
+              key={skill}
               src={skill}
               alt={skill}
               width={20}
@@ -33,7 +35,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {title}
         </h5>
       </div>
-      <Link href={`${redirect}`} className="px-4 py-0 w-full flex justify-start">
+      <Link href={`${redirect}`} target={redirectOutside ? "_blank" : "_self"} className="px-4 py-0 w-full flex justify-start">
         <Button content='Overview' style='project-card' />
       </Link>
     </div>
