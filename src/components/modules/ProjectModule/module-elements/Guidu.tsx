@@ -138,9 +138,9 @@ export const Guidu = () => {
               <h3 className="font-semibold text-black">
                 {SCOPE.constraints}
               </h3>
-              <div className="text-sm text-black mb-2 text-justify">
+              <p className="text-sm text-black mb-2 text-justify">
                 {SCOPE.constraintsDesc}
-              </div>
+              </p>
             </div>
           </div>
 
