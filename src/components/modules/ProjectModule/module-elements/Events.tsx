@@ -60,7 +60,7 @@ export const Events = () => {
               </div>
               <div className="text-sm text-black mb-2 text-justify">
                 {event.childs?.map((descs, index) =>
-                  <div key={index}>
+                  <div key={index} className="flex flex-col gap-4">
                     {descs.descriptions}
                     {descs.imageUrls && <ImageEverywhere size={Number(descs.imageSize)} imageUrl={descs.imageUrls} />}
                     {descs.iframeUrl &&
