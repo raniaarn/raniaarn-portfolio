@@ -4,14 +4,14 @@ import { SkillCardProps } from "../../../types/skillCardProps"
 
 export const SKILLS: SkillCardProps[] = [
   {
-    icon: <FaPalette className="text-purple-500 text-3xl" />,
-    title: "Graphic Design",
-    description: "Creating visually attractive design"
-  },
-  {
     icon: <FaLaptop className="text-purple-500 text-3xl" />,
     title: "UI/UX Design",
     description: "Creating Web Design with style guide and foundation."
+  },
+  {
+    icon: <FaPalette className="text-purple-500 text-3xl" />,
+    title: "Graphic Design",
+    description: "Creating visually attractive design"
   },
   {
     icon: <FaCode className="text-purple-500 text-3xl" />,
