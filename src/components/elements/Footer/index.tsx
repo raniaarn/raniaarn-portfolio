@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaGithub, FaEnvelope, FaInstagram, FaLinkedin, FaTiktok, FaMedium } from "react-icons/fa6";
+import { FaGithub, FaEnvelope, FaInstagram, FaLinkedin, FaBehance, FaMedium, FaDribbble } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -21,6 +21,12 @@ export const Footer = () => {
         </Link>
         <Link href="https://linkedin.com/in/raniaarn" target='blank'>
           <FaLinkedin className='hover:text-purple-500'/>
+        </Link>
+        <Link href="https://www.behance.net/raniaarn" target='blank'>
+          <FaBehance className='hover:text-purple-500'/>
+        </Link>
+        <Link href="https://dribbble.com/Raniaarn" target='blank'>
+          <FaDribbble className='hover:text-purple-500'/>
         </Link>
       </div>
     </footer>
