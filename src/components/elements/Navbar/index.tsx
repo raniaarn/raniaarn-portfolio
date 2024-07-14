@@ -77,32 +77,28 @@ export const Navbar = () => {
           <Link href={"/"} className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}>
             Home
           </Link>
-          {path === "/" && (
-            <>
-              <Link href={"#skills"} className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}>
-                Skills
-              </Link>
-              <div
-                className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}
-                onClick={toggleDropdown}
-                ref={ref}
-              >
-                <div className="flex items-center cursor-pointer gap-2">
-                  <span>Project</span>
-                  {dropdownOpen ? <FaChevronUp className="ml-2" size={12} /> : <FaChevronDown className="ml-2" size={12} />}
-                </div>
-                {dropdownOpen && (
-                  <div ref={ref} className={`${isTransparent ? 'absolute bg-white shadow-md rounded-xl mt-2' : 'absolute bg-purple-500 shadow-md rounded-xl mt-2'}`}>
-                    <Link href="#Applications" className={`${isTransparent ? 'text-sm block px-4 py-2 text-black' : 'text-sm block px-4 py-2 text-white'}`}>Apps</Link>
-                    <Link href="#Design" className={`${isTransparent ? 'text-sm block px-4 py-2 text-black' : 'text-sm block px-4 py-2 text-white'}`}>Designs</Link>
-                  </div>
-                )}
+          <Link href={path === "/" ? "#skills" : "/#skills"}  className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}>
+            Skills
+          </Link>
+          <div
+            className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}
+            onClick={toggleDropdown}
+            ref={ref}
+          >
+            <div className="flex items-center cursor-pointer gap-2">
+              <span>Project</span>
+              {dropdownOpen ? <FaChevronUp className="ml-2" size={12} /> : <FaChevronDown className="ml-2" size={12} />}
+            </div>
+            {dropdownOpen && (
+              <div ref={ref} className={`${isTransparent ? 'absolute bg-white shadow-md rounded-xl mt-2' : 'absolute bg-purple-500 shadow-md rounded-xl mt-2'}`}>
+                <Link href={path === "/" ? "#Applications" : "/#Applications"}  className={`${isTransparent ? 'text-sm block px-4 py-2 text-black' : 'text-sm block px-4 py-2 text-white'}`}>Apps</Link>
+                <Link href={path === "/" ? "#Design" : "/#Design"}  className={`${isTransparent ? 'text-sm block px-4 py-2 text-black' : 'text-sm block px-4 py-2 text-white'}`}>Designs</Link>
               </div>
-              <Link href={"#contact"} className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}>
-                Contact
-              </Link>
-            </>
-          )}
+            )}
+          </div>
+          <Link href={"#contact"} className={`${isTransparent ? 'text-white text-opacity-50 hover:text-opacity-100' : 'text-purple-800'}`}>
+            Contact
+          </Link>
         </div>
 
         {isCollapsed ? (
@@ -123,33 +119,29 @@ export const Navbar = () => {
           <Link onClick={handleNavCollapse} href={"/"} className={`text-2xl ${isTransparent ? 'text-white' : 'text-purple-800'}`}>
             Home
           </Link>
-          {path === "/" && (
-            <>
-              <Link onClick={handleNavCollapse} href={"#skills"} className={`text-2xl ${isTransparent ? 'text-white' : 'text-purple-800'}`}>
-                Skills
-              </Link>
-              <div
-                className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}
-                onClick={toggleDropdownMobile}
-              >
-                <div className="flex items-center cursor-pointer gap-2">
-                  <span>Project</span>
-                  {dropdownOpenMobile ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
-                </div>
-                {dropdownOpenMobile && (
-                  <div className='mt-2'>
-                    <Link onClick={handleNavCollapse} href="#Applications" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Apps</Link>
-                    <Link onClick={handleNavCollapse} href="#Design" className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Designs</Link>
-                  </div>
-                )}
+          <Link onClick={handleNavCollapse} href={path === "/" ? "#skills" : "/#skills"} className={`text-2xl ${isTransparent ? 'text-white' : 'text-purple-800'}`}>
+            Skills
+          </Link>
+          <div
+            className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}
+            onClick={toggleDropdownMobile}
+          >
+            <div className="flex items-center cursor-pointer gap-2">
+              <span>Project</span>
+              {dropdownOpenMobile ? <FaChevronUp className="ml-2" size={18} /> : <FaChevronDown className="ml-2" size={18} />}
+            </div>
+            {dropdownOpenMobile && (
+              <div className='mt-2'>
+                <Link onClick={handleNavCollapse} href={path === "/" ? "#Applications" : "/#Applications"} className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Apps</Link>
+                <Link onClick={handleNavCollapse} href={path === "/" ? "#Design" : "/#Design"} className={`h-fit ${isTransparent ? 'text-xl block px-4 py-2 text-white' : 'text-xl block px-4 py-2 text-purple-800'}`}>Designs</Link>
               </div>
-              <Link onClick={handleNavCollapse} href={"#contact"} className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}>
-                Contact
-              </Link>
-            </>
-          )}
+            )}
+          </div>
+          <Link onClick={handleNavCollapse} href={"#contact"} className={`text-2xl ${isTransparent ? 'text-white text-opacity-100' : 'text-purple-800'}`}>
+            Contact
+          </Link>
         </div>
       </div>
-    </nav>
+    </nav >
   );
 };
