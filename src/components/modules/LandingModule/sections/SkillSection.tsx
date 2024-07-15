@@ -63,16 +63,16 @@ export const SkillSection = () => {
         return (
           <SkillCard
             icon={<FaPalette className="text-purple-500 text-3xl" />}
-            title="Graphic Design"
-            description="Creating visually attractive design"
+            title="UI/UX Design"
+            description="Creating Web Design with style guide and foundation."
           />
         );
       case 2:
         return (
           <SkillCard
             icon={<FaLaptop className="text-purple-500 text-3xl" />}
-            title="UI/UX Design"
-            description="Creating Web Design with style guide and foundation."
+            title="Graphic Design"
+            description="Creating visually attractive design"
           />
         );
       case 3:
