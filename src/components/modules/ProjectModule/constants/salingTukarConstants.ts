@@ -89,6 +89,7 @@ export const EMPATHIZE = {
   fourwhy: 'Four Whys',
   fourwhyDesc: 'I asked 4 question to find root cause of the background problem. These questions, namely \'who,\' \'what,\' \'where,\' and \'why,\' were designed to extract the user\'s intent statement. By understanding the user\'s intent, we could then proceed to identify appropriate solutions that address their needs effectively. The intent statements led to target users need a platform to connect them.',
   fourwImageUrl: '/images/salingtukar/fourw.png',
+  fourwImageUrl2: '/images/salingtukar/fourw2.png',
   persona: 'User Persona',
   personaDesc: 'After finding the intent statement, I created two user persona that means i have two target users or view (owner and renter). This approach allowed for a comprehensive understanding of both target user groups and their respective viewpoints.',
   personaImageUrl: '/images/salingtukar/persona.png',
@@ -101,7 +102,8 @@ export const DEFINE = {
   title: 'Define',
   hmw: 'How Might We',
   hmwdesc: 'Based on the user journey map, I formulated four "How Might We" (HMW) questions for each persona. These questions aim to address the specific issues identified in their experiences and leverage the opportunities identified in the journey map.',
-  hmwImageUrl: '/images/salingtukar/HMW.png',
+  hmwImageUrl: '/images/salingtukar/HMW2.png',
+  hmwImageUrl2: '/images/salingtukar/HMW.png',
   prioDesc: 'After defining the HMWs, I prioritized them based on their value and the effort required using a prioritization matrix. This allowed me to focus on addressing the HMWs that would deliver the most significant impact with the least amount of effort.',
   hmwPrioUrl: '/images/salingtukar/prioritizehmw.png',
   afterPrioDesc: 'After prioritizing the HMWs, I assigned potential solutions to each chosen HMW, which could later be developed into features. As a result, the initial iteration of SalingTukar includes features such as Checkout, Tracking, Search, Chat, and Review.',
@@ -149,8 +151,7 @@ export const PROTOTYPE = {
     }
   ],
   prototypeSubtitle: 'High Fidelity Prototype',
-  prototypeDesc: 'Based on every steps before, I finally created the UI Design for SalingTukar, here I show you some of the designs i\'ve created. For the link to the prototype, you can click the button below. This protoytpe is the result of the first iteration of SalingTukar design process.',
-  prototypeUrl: 'https://bit.ly/Prototype-ST-1',
+  prototypeDesc: 'Based on every steps before, I finally created the UI Design for SalingTukar, here I show you some of the designs i\'ve created. This protoytpe is the result of the first iteration of SalingTukar design process.',
   prototypeImgUrl: [
     '/images/salingtukar/onboarding.png',
     '/images/salingtukar/Search.png',

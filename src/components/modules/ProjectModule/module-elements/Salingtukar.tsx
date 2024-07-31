@@ -213,6 +213,8 @@ export const SalingTukar = () => {
                 {EMPATHIZE.fourwhyDesc}
               </p>
               <ImageEverywhere imageUrl={EMPATHIZE.fourwImageUrl} />
+              <ImageEverywhere imageUrl={EMPATHIZE.fourwImageUrl2} />
+
             </div>
 
 
@@ -255,6 +257,7 @@ export const SalingTukar = () => {
                 {DEFINE.hmwdesc}
               </p>
               <ImageEverywhere imageUrl={DEFINE.hmwImageUrl} />
+              <ImageEverywhere imageUrl={DEFINE.hmwImageUrl2} />
               <p className="text-sm text-black mt-2 mb-2 text-justify">
                 {DEFINE.prioDesc}
               </p>
@@ -351,9 +354,6 @@ export const SalingTukar = () => {
               <p className="text-sm text-black mb-2 text-justify">
                 {PROTOTYPE.prototypeDesc}
               </p>
-              <Link href={PROTOTYPE.prototypeUrl} target="blank">
-                <Button style="primary" content="First Prototype" extendClassName="w-full" />
-              </Link>
               {PROTOTYPE.prototypeImgUrl.map((item: any, index: number) => (
                 <ImageEverywhere key={index} imageUrl={item} />
               ))}
