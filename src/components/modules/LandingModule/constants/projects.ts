@@ -30,6 +30,15 @@ export const PROJECTS: ProjectCardProps[] = [
     redirectOutside: "True"
   },
   {
+    title: 'Flip UI/UX Redesign',
+    imageUrl: '/images/Flip.png',
+    skillsUrls: [
+      '/images/figma.svg',
+    ],
+    redirect: 'https://drive.google.com/file/d/14rV3p1RQ2dJBh-fbduEfCvBu0mzmeaLK/preview',
+    redirectOutside: "True"
+  },
+  {
     title: 'Designs for Organizations and Events',
     imageUrl: '/images/org.png',
     skillsUrls: [
@@ -80,6 +89,5 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/figma.svg',
     ],
     redirect: '/projects/Guidu',
-    lastItem: true
   },
 ]
