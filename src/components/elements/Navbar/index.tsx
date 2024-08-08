@@ -54,6 +54,8 @@ export const Navbar = () => {
     setDropdownOpen(false);
   })
 
+  console.log('width di nav', width)
+
   return (
     <nav className={`px-4 fixed top-0 z-50 w-full flex flex-col justify-center ${isTransparent ? 'bg-transparent' : 'bg-white shadow-lg'}`}>
       <div className="mt-2 flex items-center w-full py-3 px-7 mx-auto md:mx-0 md:px-20 justify-between">
