@@ -39,7 +39,7 @@ export const AboutMeSection = () => {
         </div>
         <div className='mx-auto relative bottom-0 w-[50%] md:w-[50%] aspect-[4.2/5] overflow-hidden'>
           <Image
-            src={'/images/potrait.png'}
+            src={'/images/portrait2.png'}
             alt={'Raniaarn'}
             layout="fill"
           >
