@@ -8,7 +8,7 @@ export const AboutMeSection = () => {
 
   return (
     <div id='home-header' className={`pt-32 px-4 md:pt-40`}>
-      <div className='flex-col my-auto lg:flex-row flex mx-8 md:mx-20 items-end gap-4'>
+      <div className='flex-col my-auto lg:flex-row flex items-end gap-4 max-w-[1200px] mx-auto px-8 md:px-20'>
         <div className='flex-col flex items-center md:items-start w-full h-full gap-2'>
           <div className="flex-row flex gap-2 items-center justify-center">
             <div className="text-4xl font-semibold text-white">
@@ -33,7 +33,7 @@ export const AboutMeSection = () => {
               <Button content='Contact Me' style='primary' />
             </Link>
             <Link href="https://docs.google.com/document/d/17k2KLO9s-rpLuWoOd6blPUE32Nf_ERBrk_zPkjxWEiY/preview" target='blank'>
-              <Button content='View CV' style='outline'/>
+              <Button content='View CV' style='outline' />
             </Link>
           </div>
         </div>
