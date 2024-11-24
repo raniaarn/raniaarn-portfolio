@@ -10,6 +10,7 @@ export const PROJECTS: ProjectCardProps[] = [
     redirect: 'https://linktr.ee/wakafin',
     redirectOutside: "True"
   },
+
   {
     title: 'SalingTukar: Mobile App Research and Design',
     imageUrl: '/images/salingtukar.png',
@@ -19,6 +20,17 @@ export const PROJECTS: ProjectCardProps[] = [
     ],
     redirect: '/projects/SalingTukar'
   },
+
+  {
+    title: 'Berjasa: Mobile App Research and Design',
+    imageUrl: '/images/berjasa.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/maze.svg'
+    ],
+    redirect: '/projects/Berjasa'
+  },
+
   {
     title: 'A Little Thing Called Ease: Flip UI/UX Redesign',
     imageUrl: '/images/Flip.png',
@@ -89,6 +101,7 @@ export const PROJECTS: ProjectCardProps[] = [
     skillsUrls: [
       '/images/figma.svg',
     ],
-    redirect: '/projects/SkillBoozt'
+    redirect: '/projects/SkillBoozt',
+    lastItem: true
   }
 ]
