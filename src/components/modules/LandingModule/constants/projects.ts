@@ -12,16 +12,6 @@ export const PROJECTS: ProjectCardProps[] = [
   },
 
   {
-    title: 'SalingTukar: Mobile App Research and Design',
-    imageUrl: '/images/salingtukar.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/maze.svg'
-    ],
-    redirect: '/projects/SalingTukar'
-  },
-
-  {
     title: 'Berjasa: Mobile App Research and Design',
     imageUrl: '/images/berjasa.png',
     skillsUrls: [
@@ -32,15 +22,6 @@ export const PROJECTS: ProjectCardProps[] = [
   },
 
   {
-    title: 'A Little Thing Called Ease: Flip UI/UX Redesign',
-    imageUrl: '/images/Flip.png',
-    skillsUrls: [
-      '/images/figma.svg',
-    ],
-    redirect: 'https://drive.google.com/file/d/14rV3p1RQ2dJBh-fbduEfCvBu0mzmeaLK/preview',
-    redirectOutside: "True"
-  },
-  {
     title: 'DiStream: Mini Project, Video Courses Mobile App',
     imageUrl: '/images/distream.png',
     skillsUrls: [
@@ -49,6 +30,29 @@ export const PROJECTS: ProjectCardProps[] = [
     redirect: 'https://drive.google.com/file/d/1VQqgLboHcoNWYWcoXVOy_QgXMz0HER8S/preview',
     redirectOutside: "True"
   },
+
+
+  {
+    title: 'A Little Thing Called Ease: Flip UI/UX Redesign',
+    imageUrl: '/images/Flip.png',
+    skillsUrls: [
+      '/images/figma.svg',
+    ],
+    redirect: 'https://drive.google.com/file/d/14rV3p1RQ2dJBh-fbduEfCvBu0mzmeaLK/preview',
+    redirectOutside: "True"
+  },
+
+  {
+    title: 'SalingTukar: Mobile App Research and Design',
+    imageUrl: '/images/salingtukar.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/maze.svg'
+    ],
+    redirect: '/projects/SalingTukar'
+  },
+
+
   {
     title: 'MAAMS: Analysis Validator Website',
     imageUrl: '/images/maams.png',
