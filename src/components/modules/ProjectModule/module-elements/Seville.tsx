@@ -43,7 +43,7 @@ export const Seville = () => {
         <div className="flex flex-col gap-4">
           {CONTENT.map((content, index) => (
             <div key={index} id={content.id} className="flex flex-col gap-4">
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-4">
                 <h2 className="font-bold text-purple-500 text-xl">
                   {content.title}
                 </h2>
