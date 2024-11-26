@@ -40,10 +40,10 @@ export const Seville = () => {
         title="Seville Landing Page and Designs"
         date="2024"
       >
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8">
           {CONTENT.map((content, index) => (
             <div key={index} id={content.id} className="flex flex-col gap-4">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2">
                 <h2 className="font-bold text-purple-500 text-xl">
                   {content.title}
                 </h2>
@@ -51,7 +51,7 @@ export const Seville = () => {
                 {content.contents.map((item, index) =>
                   <div>
 
-                    <div className="flex flex-col text-sm text-black text-justify gap-4">
+                    <div className="flex flex-col text-sm text-black text-justify gap-2">
                       {item.Descriptions.map((desc, index) =>
                         <div>
                           {desc}
@@ -73,8 +73,8 @@ export const Seville = () => {
                     )}
 
                     {item.webUrl &&
-                      <Link href={item.webUrl} target="blank">
-                        <Button style="primary" content="Seville Web" extendClassName="w-full" />
+                      <Link href={item.webUrl} target="blank" className="flex flex-col w-full items-center">
+                        <Button style="primary" content="Seville Web" extendClassName="lg:w-[40%] w-[80%]" />
                       </Link>
                     }
 

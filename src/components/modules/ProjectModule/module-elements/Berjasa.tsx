@@ -108,7 +108,7 @@ export const Berjasa = () => {
                         <iframe id="Prototype" height={365} src={item.urls[0]} allowFullScreen></iframe>
 
                         {item.urls[1] &&
-                          <Link href={item.urls[1]} target="blank">
+                          <Link href={item.urls[1]} target="blank" className="flex flex-col w-full items-center">
                             <Button style="primary" content="Other Prototype (service providers)" extendClassName="w-full" />
                           </Link>
                         }
