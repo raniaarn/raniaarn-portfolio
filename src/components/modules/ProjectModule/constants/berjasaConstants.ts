@@ -1,5 +1,3 @@
-import { title } from "process"
-
 export const SUMMARY = {
   title: "What is Berjasa?",
   summary: "Berjasa is a platform that provides an open space for users to offer and request various types of services. The platform is designed to improve the economic well-being of the community, especially for manual laborers. This initiative aims to enhance public service in the employment sector and contribute to the achievement of the Sustainable Development Goals (SDGs), especially SDG 1, 8, 10, and 11.",
@@ -221,7 +219,7 @@ export const PROCESS =
 
     {
       title: "Prototype",
-      id: "Prototype-1",
+      id: "None",
       contents: [
         {
           title: "Design System",
@@ -309,7 +307,7 @@ export const PROCESS =
           ],
           urls: [
             "https://embed.figma.com/proto/AfOgDTw5J0uKWDCrcR5Ydy/Designs-(Iteration-2)?page-id=2001%3A3331&node-id=2141-29598&node-type=canvas&viewport=-1492%2C-2987%2C0.27&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2001%3A13947&embed-host=share",
-            "https://embed.figma.com/proto/AfOgDTw5J0uKWDCrcR5Ydy/Designs-(Iteration-2)?page-id=2001%3A3332&node-id=2179-9911&node-type=canvas&viewport=29%2C283%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2179%3A9926&embed-host=share"
+            "https://www.figma.com/proto/AfOgDTw5J0uKWDCrcR5Ydy/Designs-(Iteration-2)?node-id=2179-9911&t=g64Fde7EtxeO6cW6-1&starting-point-node-id=2179%3A9926"
           ],
           lists: []
         },

@@ -1,7 +1,8 @@
-import { ImageEverywhere, ProjectSkeleton, Tags } from "@/components/elements"
+import { Button, ImageEverywhere, ProjectSkeleton, Tags } from "@/components/elements"
 import dynamic from "next/dynamic";
 import { SUMMARY, GENERAL, PROCESS } from "../constants/berjasaConstants";
 import Image from "next/image";
+import Link from "next/link";
 
 const LayoutComponent = dynamic(
   () => import('@/components/Layout').then(mod => mod.Layout)
@@ -36,8 +37,8 @@ export const Berjasa = () => {
       <ProjectSkeleton
         summary={summaryContent}
         imageUrl="/images/berjasa.png"
-        title="Designs for Organizations and Events"
-        date="2021 - 2024"
+        title="Berjasa: Mobile App Research and Design"
+        date="2024"
       >
         <div className="flex flex-col gap-4">
           {GENERAL.map((content, index) => (
@@ -78,9 +79,11 @@ export const Berjasa = () => {
                       {item.title}
                     </h3>
 
-                    <div className="text-sm text-black mb-2 text-justify gap-2">
+                    <div className="flex flex-col text-sm text-black mb-2 text-justify gap-4">
                       {item.Descriptions && item.Descriptions?.map((desc, index) =>
-                        desc
+                        <div>
+                          {desc}
+                        </div>
                       )}
                     </div>
 
@@ -99,12 +102,19 @@ export const Berjasa = () => {
                       </ul>
                     }
 
-                    <div className="flex flex-col gap-4">
-                      {item.urls && item.urls.map((proto, index) =>
-                        <iframe id="Prototype" height={365} src={proto} allowFullScreen></iframe>
-                      )
-                      }
-                    </div>
+
+                    {item.urls[0] &&
+                      <div className="flex flex-col gap-4">
+                        <iframe id="Prototype" height={365} src={item.urls[0]} allowFullScreen></iframe>
+
+                        {item.urls[1] &&
+                          <Link href={item.urls[1]} target="blank">
+                            <Button style="primary" content="Other Prototype (service providers)" extendClassName="w-full" />
+                          </Link>
+                        }
+                      </div>
+
+                    }
 
                   </div>
 

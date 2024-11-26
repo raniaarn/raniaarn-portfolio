@@ -31,6 +31,15 @@ export const PROJECTS: ProjectCardProps[] = [
     redirectOutside: "True"
   },
 
+  {
+    title: 'Seville: Landing Page and Designs',
+    imageUrl: '/images/seville.png',
+    skillsUrls: [
+      '/images/figma.svg',
+    ],
+    redirect: '/projects/Seville'
+  },
+
 
   {
     title: 'A Little Thing Called Ease: Flip UI/UX Redesign',
@@ -106,6 +115,5 @@ export const PROJECTS: ProjectCardProps[] = [
       '/images/figma.svg',
     ],
     redirect: '/projects/SkillBoozt',
-    lastItem: true
   }
 ]

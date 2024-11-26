@@ -7,7 +7,8 @@ import {
   Guidu,
   Maams,
   Events,
-  Berjasa
+  Berjasa,
+  Seville
 } from "@/components/modules/ProjectModule";
 
 const ProjectPage = () => {
@@ -24,6 +25,7 @@ const ProjectPage = () => {
       {projectName === 'Maams' && <Maams />}
       {projectName === 'Events' && <Events />}
       {projectName === 'Berjasa' && <Berjasa />}
+      {projectName === 'Seville' && <Seville />}
     </div>
   )
 }
