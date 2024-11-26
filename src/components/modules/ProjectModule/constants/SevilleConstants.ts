@@ -33,7 +33,7 @@ export const CONTENT =
             "To organize content and to make the designs process easier, I created the informaation architecture for the landing page. I also presented this during daily stand up to make sure if the content that will be shown in the landing page relevant and enough."
           ],
           imgs: [
-            "/images/seville/IA.png"
+            "/images/seville/ia.png"
           ],
           webUrl: "",
           prototypeUrl: ""
