@@ -1,15 +1,13 @@
-import { Button } from "../Button"
 import { ProjectCardProps } from "@/components/types/projectCardProps"
 import Image from "next/image"
-import Link from "next/link"
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   skillsUrls,
   title,
-  redirect,
-  redirectOutside,
-  lastItem
+  lastItem,
+  modalId,
+  handleOpen
 }) => {
   return (
     <div id="Applications" className={`max-w-[300px] pb-2 h-full flex flex-col rounded-lg bg-white shadow-lg hover:shadow-blue-200 gap-4 ${lastItem && "md:col-span-2 md:justify-self-center"}`}>
@@ -36,9 +34,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           {title}
         </h5>
       </div>
-      <Link href={`${redirect}`} target={redirectOutside ? "_blank" : "_self"} className="px-4 w-full flex justify-start">
-        <Button content='Overview' style='project-card' />
-      </Link>
+      <div className="px-4 w-full flex justify-start">
+        <button className={`px-4 mb-2 py-2 bg-gradient-to-b from-violet-400 to-purple-800 hover:bg-gradient-to-b hover:from-purple-300 hover:to-violet-400 rounded-[40px] justify-center items-center gap-2.5 inline-flex`
+        }
+          onClick={() => handleOpen(modalId)}
+        >
+          <div className='text-white text-xs font-normal'>
+            Overview
+          </div>
+        </button>
+      </div>
     </div>
   )
 }

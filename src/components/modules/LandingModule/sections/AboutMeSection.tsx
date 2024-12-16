@@ -26,14 +26,14 @@ export const AboutMeSection = () => {
             I'm <span className='text-purple-400'>Rania Maharani Narendra</span>
           </h1>
           <p className='text-white w-full text-sm mx-4 pb-4 md:mr-24 md:mx-auto xl:mx-0 text-justify pt-2'>
-            Currently pursuing my undergraduate studies at the Faculty of Computer Science at the University of Indonesia. My academic and non academic journeys fueled my passion for UI/UX, Graphic Design, and Software Development.
+          Currently diving deep into Computer Science at the University of Indonesia, I'm on a creative journey where tech meets design. Fueled by a passion for UI/UX, Graphic Design, and Software Development, I turn ideas into impactful, user-friendly experiences!
           </p>
           <div className='flex-row pb-6 md:pb-16 flex gap-8 w-full justify-center md:justify-start'>
             <Link href="#contact">
-              <Button content='Contact Me' style='primary' />
+              <Button content='Contact Me' extendClassName="px-8" style='primary' />
             </Link>
             <Link href="https://docs.google.com/document/d/17k2KLO9s-rpLuWoOd6blPUE32Nf_ERBrk_zPkjxWEiY/preview" target='blank'>
-              <Button content='View CV' style='outline' />
+              <Button content='View CV' extendClassName="px-8" style='outline' />
             </Link>
           </div>
         </div>

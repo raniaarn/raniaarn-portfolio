@@ -1,7 +1,8 @@
 import { ProjectCard } from "@/components/elements";
 import { PROJECTS } from "../constants/projects";
+import { ProjectSectionProps } from "@/components/types/projectCardProps";
 
-export const ProjectSection = () => {
+export const ProjectSection: React.FC<ProjectSectionProps> = ({ handleOpen }) => {
   return (
     <div data-aos="fade-up" id="projects" className="flex flex-col items-center gap-4 mx-16 my-12">
       <h2 className="items-center item-center justify-center font-bold text-2xl">
@@ -9,16 +10,22 @@ export const ProjectSection = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map((project, index) => (
-          <ProjectCard
-            key={index}
-            skillsUrls={project.skillsUrls}
-            imageUrl={project.imageUrl}
-            title={project.title}
-            redirect={project.redirect}
-            redirectOutside={project.redirectOutside}
-            lastItem={project.lastItem}
-          />
+          <>
+            <ProjectCard
+              key={index}
+              skillsUrls={project.skillsUrls}
+              imageUrl={project.imageUrl}
+              title={project.title}
+              redirect={project.redirect}
+              redirectOutside={project.redirectOutside}
+              lastItem={project.lastItem}
+              description={project.description}
+              modalId={project.modalId}
+              handleOpen={handleOpen}
+            />
+          </>
         ))}
+
       </div>
       <div id="Design" className="py-4 items-center mx-auto justify-items-center w-full h-[350px]">
         <h3 className="text-violet-500 text-center text-lg font-medium py-4">
