@@ -37,7 +37,7 @@ export const PROJECTS: ProjectCardData[] = [
       '/images/uiux.svg',
 
     ],
-    redirect: ['https://drive.google.com/file/d/14rV3p1RQ2dJBh-fbduEfCvBu0mzmeaLK/preview'],
+    redirect: ['https://drive.google.com/file/d/1t0y2_vgyfARPDgBhQMLe747Xmpi7rbej/preview'],
     redirectOutside: "True",
     description: "Aligned with Flip's commitment to growth and adaptability, the Berbinar team focuses on identifying problems and delivering design solutions that enhance ease of use and improve Flip's services.",
     modalId: "flip"
