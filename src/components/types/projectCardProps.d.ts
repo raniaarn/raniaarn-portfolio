@@ -10,6 +10,7 @@ interface ProjectCardData {
   title: string
   redirect: string[]
   redirectOutside?: string
+  top?: string
   lastItem?: boolean
   description: string
   modalId: string

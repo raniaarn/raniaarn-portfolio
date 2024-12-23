@@ -10,9 +10,11 @@ export const PROJECTS: ProjectCardData[] = [
       '/images/maze.svg',
       '/images/uiux.svg',
     ],
-    redirect: ['/projects/Berjasa', '/projects/Berjasa'],
+    redirect: ['https://www.figma.com/proto/Nxv7pg3FzSgQBYvwoCX3B4/Decks?page-id=0%3A1&node-id=31-650&p=f&viewport=-1995%2C-528%2C0.17&t=YJSn6ykJHq9MWvOX-1&scaling=contain&content-scaling=fixed'],
     description: "Berjasa addresses challenges like competition, weak networks, unclear pricing, and lack of appreciation by connecting service providers with customers, improving manual laborers' economic well-being through a user-friendly platform.",
-    modalId: "berjasa"
+    modalId: "berjasa",
+    redirectOutside: "True",
+    top: "True"
   },
 
   {

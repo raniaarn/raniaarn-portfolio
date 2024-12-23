@@ -1,5 +1,7 @@
 import { ProjectCardProps } from "@/components/types/projectCardProps"
 import Image from "next/image"
+import { FaStar } from "react-icons/fa6";
+
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
@@ -7,6 +9,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   lastItem,
   modalId,
+  top,
   handleOpen
 }) => {
   return (
@@ -30,9 +33,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             />
           ))}
         </div>
-        <h5 className="items-start text-sm font-semibold">
-          {title}
-        </h5>
+        <div className="flex flex-row">
+          <h5 className="text-sm font-semibold inline-flex items-start">
+            {title} {top && <FaStar className="text-purple-500" />}
+          </h5>
+
+        </div>
       </div>
       <div className="px-4 w-full flex justify-start">
         <button className={`px-4 mb-2 py-2 bg-gradient-to-b from-violet-400 to-purple-800 hover:bg-gradient-to-b hover:from-purple-300 hover:to-violet-400 rounded-[40px] justify-center items-center gap-2.5 inline-flex`

@@ -22,6 +22,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ handleOpen }) =>
               description={project.description}
               modalId={project.modalId}
               handleOpen={handleOpen}
+              top={project.top}
             />
           </>
         ))}

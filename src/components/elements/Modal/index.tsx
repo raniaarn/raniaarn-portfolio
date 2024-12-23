@@ -1,13 +1,13 @@
 import React from 'react';
 import { useRef } from 'react'
 import { useOnClickOutside } from 'usehooks-ts'
-import { FaTimes } from 'react-icons/fa';
+import { FaStar, FaTimes } from 'react-icons/fa';
 import Image from "next/image"
 import { ModalProps } from '@/components/types/modalProps';
 import Link from 'next/link';
 import { Button } from '@/components';
 
-export const Modal: React.FC<ModalProps> = ({ handleClose, title, description, skillsUrls, redirect, redirectOutside, imageUrl }) => {
+export const Modal: React.FC<ModalProps> = ({ handleClose, title, description, skillsUrls, redirect, redirectOutside, imageUrl, top }) => {
   const ref = useRef(null)
 
   useOnClickOutside(ref, () => {
@@ -34,6 +34,11 @@ export const Modal: React.FC<ModalProps> = ({ handleClose, title, description, s
             width={400}
             height={400} >
           </Image>
+          {top && (
+            <p className="font-bold inline-flex items-center gap-2">
+              Top Project <FaStar className="text-purple-500" />
+            </p>
+          )}
           <div className="items-start flex flex-row gap-4">
             {skillsUrls.map((skill) => (
               <Image
@@ -49,7 +54,7 @@ export const Modal: React.FC<ModalProps> = ({ handleClose, title, description, s
           <p className='text-xs text-center'>{description}</p>
           <div className='flex-row flex gap-4 w-full justify-center'>
             <Link className="w-full" href={`${redirect[0]}`} target={redirectOutside ? "_blank" : "_self"}>
-              <Button extendClassName="w-full"  content='Learn More' style='primary' />
+              <Button extendClassName="w-full" content='Learn More' style='primary' />
             </Link>
             {redirect[1] &&
               <Link className="w-full" href={redirect[1]}>
