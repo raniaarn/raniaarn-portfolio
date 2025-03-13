@@ -59,32 +59,19 @@ export const PROJECTS: ProjectCardData[] = [
     modalId: "seville"
   },
 
-  {
-    title: 'Modernize Wakaf with Wakafin, Desktop and Mobile Design',
-    imageUrl: '/images/wakafin.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/uiux.svg',
-    ],
-    redirect: ['https://linktr.ee/wakafin'],
-    redirectOutside: "True",
-    description: "Wakaf in Indonesia faces challenges like poor management, neglect, and trust issues due to limited transparency. Wakafin addresses these with better transparency and optimized management.",
-    modalId: "wakafin"
-  },
+  // {
+  //   title: 'SalingTukar: Student-Friendly, Wallet-Wise Solutions',
+  //   imageUrl: '/images/salingtukar.png',
+  //   skillsUrls: [
+  //     '/images/figma.svg',
+  //     '/images/maze.svg',
+  //     '/images/uiux.svg',
 
-  {
-    title: 'SalingTukar: Student-Friendly, Wallet-Wise Solutions',
-    imageUrl: '/images/salingtukar.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/maze.svg',
-      '/images/uiux.svg',
-
-    ],
-    redirect: ['/projects/SalingTukar'],
-    description: "SalingTukar is an app designed for college students, simplifying the renting and lending of items for occasional use, addressing time, accessibility, and economic challenges.",
-    modalId: "salingtukar"
-  },
+  //   ],
+  //   redirect: ['/projects/SalingTukar'],
+  //   description: "SalingTukar is an app designed for college students, simplifying the renting and lending of items for occasional use, addressing time, accessibility, and economic challenges.",
+  //   modalId: "salingtukar"
+  // },
 
 
   {
@@ -118,17 +105,17 @@ export const PROJECTS: ProjectCardData[] = [
     description: "Consist of my designs for organizations and events at University of Indonesia",
     modalId: "organization"
   },
-  {
-    title: 'Bansource: Empowering Lifes, Ensuring Safety',
-    imageUrl: '/images/bansource.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/uiux.svg',
-    ],
-    redirect: ['/projects/Bansource'],
-    description: "According to BPS 2023, social assistance (Bansos) in Indonesia is not optimized or evenly distributed due to mistargeting and corruption. Bansource leverages technologies like blockchain, OCR, and AI to enhance security and transparency.",
-    modalId: "bansource"
-  },
+  // {
+  //   title: 'Bansource: Empowering Lifes, Ensuring Safety',
+  //   imageUrl: '/images/bansource.png',
+  //   skillsUrls: [
+  //     '/images/figma.svg',
+  //     '/images/uiux.svg',
+  //   ],
+  //   redirect: ['/projects/Bansource'],
+  //   description: "According to BPS 2023, social assistance (Bansos) in Indonesia is not optimized or evenly distributed due to mistargeting and corruption. Bansource leverages technologies like blockchain, OCR, and AI to enhance security and transparency.",
+  //   modalId: "bansource"
+  // },
 
   {
     title: 'NextJs Website Portfolio',
@@ -146,29 +133,44 @@ export const PROJECTS: ProjectCardData[] = [
     modalId: "portfolio"
   },
 
-  {
-    title: 'Memoar-id: Social Media Website',
-    imageUrl: '/images/memoar.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/nextjs.svg',
-      '/images/uiux.svg',
-      '/images/dev.svg',
-    ],
-    redirect: ['/projects/Memoar'],
-    description: "Memoar is a CRUD application built with Next.js, utilizing APIs, and developed within just one week.",
-    modalId: "memoar"
-  },
-  {
-    title: 'SkillBoozt: Buckle Up and Boozt Your Skillz!',
-    imageUrl: '/images/skillboozt.png',
-    skillsUrls: [
-      '/images/figma.svg',
-      '/images/uiux.svg',
+  // {
+  //   title: 'Memoar-id: Social Media Website',
+  //   imageUrl: '/images/memoar.png',
+  //   skillsUrls: [
+  //     '/images/figma.svg',
+  //     '/images/nextjs.svg',
+  //     '/images/uiux.svg',
+  //     '/images/dev.svg',
+  //   ],
+  //   redirect: ['/projects/Memoar'],
+  //   description: "Memoar is a CRUD application built with Next.js, utilizing APIs, and developed within just one week.",
+  //   modalId: "memoar"
+  // },
 
+  {
+    title: 'Modernize Wakaf with Wakafin, Desktop and Mobile Design',
+    imageUrl: '/images/wakafin.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/uiux.svg',
     ],
-    redirect: ['/projects/SkillBoozt'],
-    description: "SkillBoozt is a mobile e-learning app designed to enhance hard and soft skills. It offers one-on-one mentor sessions and quizzes to challenge users and enrich their learning experience.",
-    modalId: "skillboozt"
-  }
+    redirect: ['https://linktr.ee/wakafin'],
+    redirectOutside: "True",
+    description: "Wakaf in Indonesia faces challenges like poor management, neglect, and trust issues due to limited transparency. Wakafin addresses these with better transparency and optimized management.",
+    modalId: "wakafin"
+  },
+
+  
+  // {
+  //   title: 'SkillBoozt: Buckle Up and Boozt Your Skillz!',
+  //   imageUrl: '/images/skillboozt.png',
+  //   skillsUrls: [
+  //     '/images/figma.svg',
+  //     '/images/uiux.svg',
+
+  //   ],
+  //   redirect: ['/projects/SkillBoozt'],
+  //   description: "SkillBoozt is a mobile e-learning app designed to enhance hard and soft skills. It offers one-on-one mentor sessions and quizzes to challenge users and enrich their learning experience.",
+  //   modalId: "skillboozt"
+  // }
 ]

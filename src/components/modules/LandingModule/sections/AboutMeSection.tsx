@@ -34,7 +34,7 @@ export const AboutMeSection = () => {
             <Link href="#contact">
               <Button content='Contact Me' extendClassName="px-8" style='primary' />
             </Link>
-            <Link href="https://docs.google.com/document/d/17k2KLO9s-rpLuWoOd6blPUE32Nf_ERBrk_zPkjxWEiY/preview" target='blank'>
+            <Link href="https://docs.google.com/document/d/1fNeuWB3s8Lsc7rZqG2wxuALLlrHlLd54z-QGjMrYnbQ/preview" target='blank'>
               <Button content='View CV' extendClassName="px-8" style='outline' />
             </Link>
           </div>
@@ -42,7 +42,7 @@ export const AboutMeSection = () => {
         <div className='mx-auto relative bottom-0 w-[70%] md:w-[50%] max-w-96 aspect-[4.2/5] overflow-hidden'>
           {isLoading && (
             <Image
-              src="/images/still.png" 
+              src="/images/still.png"
               alt="Loading"
               layout="fill"
               objectFit="cover"

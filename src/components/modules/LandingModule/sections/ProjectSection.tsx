@@ -4,9 +4,15 @@ import { ProjectSectionProps } from "@/components/types/projectCardProps";
 
 export const ProjectSection: React.FC<ProjectSectionProps> = ({ handleOpen }) => {
   return (
-    <div data-aos="fade-up" id="projects" className="flex flex-col items-center gap-4 mx-16 my-12">
-      <h2 className="items-center item-center justify-center font-bold text-2xl">
-        Projects
+    <div data-aos="fade-up" id="Summary" className="flex flex-col items-center gap-4 mx-16 my-12">
+      <h3 className="items-center item-center justify-center font-bold text-2xl">
+        Summary
+      </h3>
+      <div id="Design" className="pb-4 items-center justify-center justify-items-center w-full min-w-[328px] h-[350px]">
+        <iframe className="w-3/4 md:w-1/2 h-full mx-auto justify-items-center" src="https://ristek.link/PortfolioRania" />
+      </div>
+      <h2 id="Case Study" className="items-center item-center text-center justify-center font-bold text-2xl">
+        Selected Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map((project, index) => (
@@ -28,12 +34,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ handleOpen }) =>
         ))}
 
       </div>
-      <div id="Design" className="py-4 items-center mx-auto justify-items-center w-full h-[350px]">
-        <h3 className="text-violet-500 text-center text-lg font-medium py-4">
-          Design's Portfolio
-        </h3>
-        <iframe className="w-3/4 md:w-1/2 h-full mx-auto justify-items-center" src="https://drive.google.com/file/d/1HHtwqH6bKcVKdRloNJ95-RkjzXZHZg72/preview" />
-      </div>
+
     </div>
   )
 }
