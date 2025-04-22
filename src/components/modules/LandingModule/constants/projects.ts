@@ -3,6 +3,34 @@ import { ProjectCardData } from "@/components/types/projectCardProps";
 export const PROJECTS: ProjectCardData[] = [
 
   {
+    title: 'Gradient Academy: Designing Impactful Learning Experiences',
+    imageUrl: '/images/gradient.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/maze.svg',
+      '/images/uiux.svg',
+    ],
+    redirect: ['https://www.figma.com/proto/5ticSc4srsOhOGAjswShuG/Portfolio-Web?page-id=0%3A1&node-id=1-5&viewport=-419%2C-2%2C0.43&t=vMdWG5dWZqvUIXh8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A5'],
+    description: "Gradient is an e-learning platform offering high-quality higher education content, including statistics, calculus, and accounting, developed by top university lecturers. As a Product Design Intern, I conducted user research, designed UI/UX for mobile and web apps, and handed off designs to developers.",
+    modalId: "gradient",
+    redirectOutside: "True",
+    top: "True"
+  },
+
+  {
+    title: 'PanduanMemori: Remembering Together, Caring Together',
+    imageUrl: '/images/panduan.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/uiux.svg',
+    ],
+    redirect: ['https://www.figma.com/proto/5ticSc4srsOhOGAjswShuG/Portfolio-Web?page-id=1%3A4&node-id=43-5017&viewport=234%2C235%2C0.16&t=jO5VCCIS9LfQz6mK-1&scaling=scale-down&content-scaling=fixed'],
+    description: "PanduanMemori is a mobile app that supports caregivers and individuals with dementia by integrating AI and navigation systems. It helps caregivers monitor daily activities, track the patient's real-time location and status, and view weekly activity summaries, providing valuable insights into the patient's history for better care.",
+    modalId: "panduanmemori",
+    redirectOutside: "True",
+  },
+
+  {
     title: 'Berjasa: Revitalizing The Service Sector',
     imageUrl: '/images/berjasa.png',
     skillsUrls: [
@@ -13,8 +41,7 @@ export const PROJECTS: ProjectCardData[] = [
     redirect: ['https://www.figma.com/proto/Nxv7pg3FzSgQBYvwoCX3B4/Decks?page-id=0%3A1&node-id=31-650&p=f&viewport=-1995%2C-528%2C0.17&t=YJSn6ykJHq9MWvOX-1&scaling=contain&content-scaling=fixed'],
     description: "Berjasa addresses challenges like competition, weak networks, unclear pricing, and lack of appreciation by connecting service providers with customers, improving manual laborers' economic well-being through a user-friendly platform.",
     modalId: "berjasa",
-    redirectOutside: "True",
-    top: "True"
+    redirectOutside: "True"
   },
 
   {
