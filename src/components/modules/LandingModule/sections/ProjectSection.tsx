@@ -9,7 +9,7 @@ export const ProjectSection: React.FC<ProjectSectionProps> = ({ handleOpen }) =>
         Summary
       </h3>
       <div id="Design" className="pb-4 items-center justify-center justify-items-center w-full min-w-[328px] h-[350px]">
-        <iframe className="w-3/4 md:w-1/2 h-full mx-auto justify-items-center" src="https://ristek.link/PortfolioRania" />
+        <iframe className="w-3/4 md:w-1/2 h-full mx-auto justify-items-center" src="https://drive.google.com/file/d/1cpP246xvzF6_v6yqHO-s6fUhJAym93GX/preview" />
       </div>
       <h2 id="Case Study" className="items-center item-center text-center justify-center font-bold text-2xl">
         Selected Projects
