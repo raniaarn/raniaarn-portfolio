@@ -31,6 +31,19 @@ export const PROJECTS: ProjectCardData[] = [
   },
 
   {
+    title: 'From Chaos to Clarity: Streamlining VR UI with a Flexible Design System',
+    imageUrl: '/images/smarteye.png',
+    skillsUrls: [
+      '/images/figma.svg',
+      '/images/uiux.svg',
+    ],
+    redirect: ['https://www.figma.com/proto/5ticSc4srsOhOGAjswShuG/Portfolio-Web?page-id=1%3A3&node-id=136-7707&viewport=547%2C107%2C0.36&t=oA8ZpKL8BsFirlpr-1&scaling=scale-down&content-scaling=fixed'],
+    description: "During my internship at Smarteye by Telkom Indonesia, I created a comprehensive design system from foundation to pattern on Figma, making it possible for faster and more consistent design development",
+    modalId: "designsystem",
+    redirectOutside: "True",
+  },
+
+  {
     title: 'Berjasa: Revitalizing The Service Sector',
     imageUrl: '/images/berjasa.png',
     skillsUrls: [
@@ -184,10 +197,11 @@ export const PROJECTS: ProjectCardData[] = [
     redirect: ['https://linktr.ee/wakafin'],
     redirectOutside: "True",
     description: "Wakaf in Indonesia faces challenges like poor management, neglect, and trust issues due to limited transparency. Wakafin addresses these with better transparency and optimized management.",
-    modalId: "wakafin"
+    modalId: "wakafin",
+    lastItem: true
   },
 
-  
+
   // {
   //   title: 'SkillBoozt: Buckle Up and Boozt Your Skillz!',
   //   imageUrl: '/images/skillboozt.png',
