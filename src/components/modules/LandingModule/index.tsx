@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import AboutMeSection from "./sections/AboutMeSection";
 import { SkillSection } from "./sections/SkillSection";
 import { ProjectSection } from "./sections/ProjectSection";
+import { MeSection } from "./sections/MeSection";
 import { PROJECTS } from "./constants/projects";
 import { useState } from "react";
 import { Modal } from "@/components/elements";
@@ -35,6 +36,7 @@ export const LandingModule = () => {
     <LayoutComponent metaTitle="Raniaarn" metaDescription="Welcome to Raniaarn's Page">
       <AboutMeSection />
       <SkillSection />
+      <MeSection />
       <ProjectSection handleOpen={handleOpen} />
       {activeModal && <Modal
         modalId={activeModal}
