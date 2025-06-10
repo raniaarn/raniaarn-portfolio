@@ -3,6 +3,7 @@ import AboutMeSection from "./sections/AboutMeSection";
 import { SkillSection } from "./sections/SkillSection";
 import { ProjectSection } from "./sections/ProjectSection";
 import { MeSection } from "./sections/MeSection";
+import { ExpertiseSection } from "./sections/ExpertiseSection";
 import { PROJECTS } from "./constants/projects";
 import { useState } from "react";
 import { Modal } from "@/components/elements";
@@ -31,12 +32,13 @@ export const LandingModule = () => {
     redirect: [],
     redirectOutside: "False"
   };
-  
+
   return (
     <LayoutComponent metaTitle="Raniaarn" metaDescription="Welcome to Raniaarn's Page">
       <AboutMeSection />
       <SkillSection />
       <MeSection />
+      <ExpertiseSection />
       <ProjectSection handleOpen={handleOpen} />
       {activeModal && <Modal
         modalId={activeModal}

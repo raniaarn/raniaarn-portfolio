@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const MeSection = () => {
   return (
-    <div data-aos="fade-up" id="Me" className="flex justify-center gap-4 mx-16 my-12">
+    <div data-aos="fade-up" id="Me" className="flex justify-center gap-4 mx-16 my-12 py-4">
       <div className="flex flex-col justify-center items-center lg:flex-row gap-8 lg:gap-12 w-[100%] md:w-[80%]">
         <Image className='w-[100%] sm:w-[60%] md:w-[60%] lg:w-[40%] rounded-xl'
           src="/images/RaniaSkills.png"
