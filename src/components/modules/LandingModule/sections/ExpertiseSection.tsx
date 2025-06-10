@@ -36,8 +36,8 @@ export const ExpertiseSection = () => {
               key={index}
               onClick={() => setActiveTab(index)}
               className={`whitespace-nowrap px-4 py-2 rounded-lg text-sm md:text-base font-medium transition-colors ${activeTab === index
-                  ? 'bg-purple-400 text-white'
-                  : 'bg-white text-purple-400 outline outline-2 outline-violet-400'
+                ? 'bg-purple-400 text-white'
+                : 'bg-white text-purple-400 outline outline-2 outline-violet-400'
                 }`}
             >
               {tab.label}
@@ -57,6 +57,7 @@ export const ExpertiseSection = () => {
               src={tabs[activeTab].image}
               alt={tabs[activeTab].label}
               fill
+              quality={90}
               className="object-contain rounded-lg"
               sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1024px) 70vw, 800px"
               priority={activeTab === 0}
