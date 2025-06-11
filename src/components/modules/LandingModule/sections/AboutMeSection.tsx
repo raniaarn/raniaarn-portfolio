@@ -30,7 +30,7 @@ export const AboutMeSection = () => {
           <p className='text-white w-full text-sm mx-4 pb-4 md:mr-24 md:mx-auto xl:mx-0 text-justify pt-2'>
             I'm Rania Maharani Narendra, currently diving deep into Computer Science at the University of Indonesia, I'm on a creative journey where tech meets design. Fueled by a passion for UI/UX, Graphic Design, and Software Development, I turn ideas into impactful, user-friendly experiences!
           </p>
-          <div className='flex-row pb-6 md:pb-16 flex gap-8 w-full justify-center md:justify-start'>
+          <div className='flex-row pb-6 md:pb-16 flex gap-4 w-full justify-center md:justify-start'>
             <Link href="#contact">
               <Button content='Contact Me' extendClassName="px-8" style='primary' />
             </Link>
