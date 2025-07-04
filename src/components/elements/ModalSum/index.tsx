@@ -5,18 +5,22 @@ import Image from 'next/image'
 import { HiglightModalProps } from '@/components/types/highlightModalProps'
 
 export const ModalSum: React.FC<HiglightModalProps> = ({ handleCloseSum, childImageUrl }) => {
-  const [isLoading, setIsLoading] = useState(false)
   const ref = useRef(null)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [loadedIndex, setLoadedIndex] = useState<number | null>(null)
+
+  const isLoading = loadedIndex !== currentIndex
 
   useOnClickOutside(ref, () => handleCloseSum())
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? childImageUrl.length - 1 : prev - 1))
+    const newIndex = currentIndex === 0 ? childImageUrl.length - 1 : currentIndex - 1
+    setCurrentIndex(newIndex)
   }
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev === childImageUrl.length - 1 ? 0 : prev + 1))
+    const newIndex = currentIndex === childImageUrl.length - 1 ? 0 : currentIndex + 1
+    setCurrentIndex(newIndex)
   }
 
   return (
@@ -34,25 +38,29 @@ export const ModalSum: React.FC<HiglightModalProps> = ({ handleCloseSum, childIm
           {childImageUrl.map((_, index) => (
             <div
               key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-purple-500 scale-110' : 'bg-gray-300'
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                index === currentIndex ? 'bg-purple-500 scale-110' : 'bg-gray-300'
+              }`}
             />
           ))}
         </div>
 
-        {/* Image */}
-        <div className="w-full h-[500px] flex justify-center items-center">
-          {isLoading ? (
-            <FaSpinner className="text-purple-500 text-4xl animate-spin" />) : (
-            <Image
-              src={childImageUrl[currentIndex]}
-              alt={`Slide ${currentIndex}`}
-              width={960}
-              height={600}
-              className="rounded-lg object-contain"
-              onLoadingComplete={() => setIsLoading(false)}
-            />
+        {/* Image Viewer */}
+        <div className="w-full h-[500px] flex justify-center items-center relative">
+          {isLoading && (
+            <FaSpinner className="absolute text-purple-500 text-4xl animate-spin z-10" />
           )}
+          <Image
+            key={childImageUrl[currentIndex]}
+            src={childImageUrl[currentIndex]}
+            alt={`Slide ${currentIndex}`}
+            width={960}
+            height={600}
+            className={`rounded-lg object-contain transition-opacity duration-300 ${
+              isLoading ? 'opacity-0' : 'opacity-100'
+            }`}
+            onLoad={() => setLoadedIndex(currentIndex)}
+          />
         </div>
 
         {/* Prev / Next Buttons */}
@@ -60,12 +68,14 @@ export const ModalSum: React.FC<HiglightModalProps> = ({ handleCloseSum, childIm
           <button
             onClick={handlePrev}
             className="bg-purple-500 text-white px-2 py-2 rounded hover:bg-purple-600"
+            disabled={isLoading}
           >
             <FaArrowLeft className="text-white text-sm" />
           </button>
           <button
             onClick={handleNext}
             className="bg-purple-500 text-white px-2 py-2 rounded hover:bg-purple-600"
+            disabled={isLoading}
           >
             <FaArrowRight className="text-white text-sm" />
           </button>
