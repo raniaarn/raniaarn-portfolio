@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react'
 import { useOnClickOutside } from 'usehooks-ts'
-import { FaTimes, FaArrowRight, FaArrowLeft } from 'react-icons/fa'
+import { FaTimes, FaArrowRight, FaArrowLeft, FaSpinner } from 'react-icons/fa'
 import Image from 'next/image'
 import { HiglightModalProps } from '@/components/types/highlightModalProps'
 
 export const ModalSum: React.FC<HiglightModalProps> = ({ handleCloseSum, childImageUrl }) => {
+  const [isLoading, setIsLoading] = useState(false)
   const ref = useRef(null)
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -39,14 +40,20 @@ export const ModalSum: React.FC<HiglightModalProps> = ({ handleCloseSum, childIm
           ))}
         </div>
 
-        {/* Image Viewer */}
-        <Image
-          src={childImageUrl[currentIndex]}
-          alt={`Slide ${currentIndex}`}
-          width={960}
-          height={600}
-          className="rounded-lg object-contain"
-        />
+        {/* Image */}
+        <div className="w-full h-[500px] flex justify-center items-center">
+          {isLoading ? (
+            <FaSpinner className="text-purple-500 text-4xl animate-spin" />) : (
+            <Image
+              src={childImageUrl[currentIndex]}
+              alt={`Slide ${currentIndex}`}
+              width={960}
+              height={600}
+              className="rounded-lg object-contain"
+              onLoadingComplete={() => setIsLoading(false)}
+            />
+          )}
+        </div>
 
         {/* Prev / Next Buttons */}
         <div className="flex gap-4 mt-4">

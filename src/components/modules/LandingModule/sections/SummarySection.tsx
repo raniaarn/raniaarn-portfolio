@@ -22,7 +22,7 @@ export const SummarySection: React.FC<SummarySectionProps> = ({ handleOpenSum })
   }, [])
 
   return (
-    <div data-aos="fade-up" id="Summary" className="flex flex-col items-center gap-4 px-4">
+    <div data-aos="fade-up" id="Summary" className="flex flex-col items-center gap-4">
       <h3 className="font-bold text-2xl text-center">Summary Highlights</h3>
       <p className="text-center">Click any card to see details</p>
 
